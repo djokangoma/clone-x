@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-function Header (){
-
+function Header() {
   return (
-    <div className="header"> 
+    <div className="header">
       <h1 className="page-title">Home</h1>
-        <img src="src/images/Top-Tweets.png" className="top-tweets" alt='top'/>
-        </div>
-    
-  )
+      <h1 className="page-title">Home</h1>
+      <img src="src/images/Top-Tweets.png" className="top-tweets" alt="top" />
+    </div>
+  );
 }
 
-export default Header ;
+export default Header;
