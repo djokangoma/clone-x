@@ -15,7 +15,7 @@ function Sidebar() {
       <div>
         <p>
           <img src="src/icons/Explore.png" width={15} alt="icon-explore" />{" "}
-          Explore
+          Explore my name is joeffrey
         </p>
       </div>
 
