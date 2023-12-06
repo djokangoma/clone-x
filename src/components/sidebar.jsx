@@ -1,68 +1,10 @@
 import React from "react";
+import SidebarNav from "./sidebarnav";
 
 function Sidebar() {
   return (
     <div>
-      <div>
-        <img src="src/icons/Twitter.png" alt="logo-twitter" />
-      </div>
-
-      <div>
-        <p>
-          <img src="src/icons/Home-Fill.png " width={15} alt="icon-home" /> home
-        </p>
-      </div>
-
-      <div>
-        <p>
-          <img src="src/icons/Explore.png" width={15} alt="icon-explore" />{" "}
-          Explore
-        </p>
-      </div>
-
-      <div>
-        <p>
-          <img
-            src="src/icons/Notifications.png"
-            width={15}
-            alt="icon-notification"
-          />{" "}
-          Notifications
-        </p>
-      </div>
-
-      <div>
-        <p>
-          <img src="src/icons/Messages.png" width={15} alt="icon-message" />
-          Messages
-        </p>
-      </div>
-      <div>
-        <p>
-          <img src="src/icons/Bookmarks.png" width={15} alt="icon-Bookmarks" />{" "}
-          Bookmarks
-        </p>
-      </div>
-
-      <div>
-        <p>
-          {" "}
-          <img src="src/icons/Lists.png" width={15} alt="icon-Lists" /> Lists
-        </p>
-      </div>
-
-      <div>
-        <p>
-          <img src="src/icons/Profile.png" width={15} alt="icon-Profile" />{" "}
-          Profile
-        </p>
-      </div>
-
-      <div>
-        <p>
-          <img src="src/icons/More.png" width={15} alt="icon-More" /> More
-        </p>
-      </div>
+      <SidebarNav />
       <button className="btn-tweetsidebar">Tweet</button>
       <div>
         <img src="src/images/profile-photo.png" alt="image-topTweets" />
