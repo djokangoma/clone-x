@@ -1,16 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter } from "react-router-dom";
+import "./style/App.css";
 import Layout from "./components/layout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home";
-import Explore from "";
+import Explore from "./pages/explore";
+import Notifications from "./pages/notifications";
+import Messages from "./pages/messages";
+import Bookmarks from "./pages/bookmarks";
+import Lists from "./pages/lists";
+import Profile from "./pages/profile";
+import More from "./style/pages/more";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "home",
         element: <Home />,
@@ -20,16 +30,16 @@ const router = createBrowserRouter([
         element: <Explore />,
       },
       {
-        path: "notification",
-        element: <Notification />,
+        path: "notifications",
+        element: <Notifications />,
       },
       {
         path: "messages",
         element: <Messages />,
       },
       {
-        path: "bookmaks",
-        element: <Bookmaks />,
+        path: "bookmarks",
+        element: <Bookmarks />,
       },
       {
         path: "lists",
