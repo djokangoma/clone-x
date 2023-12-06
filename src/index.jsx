@@ -1,16 +1,49 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import SidebarNav from "./components/sidebarnav";
+import { createBrowserRouter } from "react-router-dom";
+import Layout from "./components/layout";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/home";
+import Explore from "";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <SidebarNav />,
-  },
-  {
-    path: "/home",
+    element: <Layout />,
+    children: [
+      {
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "explore",
+        element: <Explore />,
+      },
+      {
+        path: "notification",
+        element: <Notification />,
+      },
+      {
+        path: "messages",
+        element: <Messages />,
+      },
+      {
+        path: "bookmaks",
+        element: <Bookmaks />,
+      },
+      {
+        path: "lists",
+        element: <Lists />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "more",
+        element: <More />,
+      },
+    ],
   },
 ]);
 
