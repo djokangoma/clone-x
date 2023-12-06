@@ -4,7 +4,7 @@ import Home from "./home";
 function Explore() {
   return (
     <div>
-      <header />
+      <Home />
     </div>
   );
 }
