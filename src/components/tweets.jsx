@@ -3,7 +3,7 @@ import React from "react";
 function TweetAvatar({ image }) {
   return (
     <div className="tweet-avatar">
-      <img src={image} alt="" />
+      <img src={image} alt="image" />
     </div>
   );
 }
@@ -57,7 +57,7 @@ function TweetActions() {
       <TweetAction icon="src/icons/Reply.png" value="17" />
       <TweetAction icon="src/icons/Retweet.png" value="19" />
       <TweetAction icon="src/icons/React.png" value="19" />
-      <TweetAction icon="src/icons/Share.png" value="19" />
+      <TweetAction icon="src/icons/Share.png" />
     </div>
   );
 }

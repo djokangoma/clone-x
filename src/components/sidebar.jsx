@@ -16,7 +16,7 @@ function Sidebar() {
       <div>
         <p>
           <img src="src/icons/Explore.png" width={15} alt="icon-explore" />{" "}
-          Explore my name is joeffrey
+          Explore
         </p>
       </div>
 
@@ -33,18 +33,13 @@ function Sidebar() {
 
       <div>
         <p>
-          <img src="src/icons/Messages.png" width={15} alt="icon-message" />{" "}
-          {" Messages"}
+          <img src="src/icons/Messages.png" width={15} alt="icon-message" />
+          Messages
         </p>
       </div>
       <div>
         <p>
-          {" "}
-          <img
-            src="src/icons/Bookmarks.png"
-            width={15}
-            alt="icon-Bookmarks"
-          />{" "}
+          <img src="src/icons/Bookmarks.png" width={15} alt="icon-Bookmarks" />{" "}
           Bookmarks
         </p>
       </div>
@@ -68,7 +63,7 @@ function Sidebar() {
           <img src="src/icons/More.png" width={15} alt="icon-More" /> More
         </p>
       </div>
-      <button></button>
+      <button className="btn-tweetsidebar">Tweet</button>
       <div>
         <img src="src/images/profile-photo.png" alt="image-topTweets" />
         <p>
