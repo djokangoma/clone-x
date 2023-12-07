@@ -193,15 +193,22 @@ body {
   gap: 20px;
 }
 
-/*sidebar*/
+.Sidebar {
+  width: 20vw;
+  height: 100vh;
+}
 
 .navlink {
-  padding: 1rem 2.3rem;
+  padding: 0.3rem 2.3rem;
   padding-right: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .icon-navlink {
-  padding-right: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
 
 ul {
@@ -225,7 +232,12 @@ ul li a {
   display: 400px;
 }
 
-/*trends*/
+.trends {
+  width: 20vw;
+  height: 100vh;
+  margin: 2px 10px;
+}
+
 .btn-searchTwitter {
   text-transform: capitalize;
   padding: 0.7rem 1.5rem;
@@ -245,6 +257,21 @@ ul li a {
   margin: 5px;
 }
 
+.trend-setting {
+  display: flex;
+  align-items: center;
+  gap: 9vw;
+}
+
+.span-More2 {
+  display: flex;
+  align-items: center;
+  gap: 13vw;
+}
+
+.Explore-Quid {
+  margin-top: 5px;
+}
 .whoToFollow {
   margin-top: 1.2vh;
   border: 1px solid transparent;

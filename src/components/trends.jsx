@@ -5,25 +5,26 @@ function Trends() {
   return (
     <div className="trends">
       <button className="btn-searchTwitter">
-        {" "}
         <img src="src/icons/Search.png" alt="icon-search" />
         search twitter
       </button>
 
       <div className="trendForYou">
-        <h5>
-          {" "}
+        <h5 className="trend-setting">
           Trends for you <img src="src/icons/Settings.png" alt="icon-setting" />
         </h5>
+
         <h5>
-          <span>
-            {" "}
-            tranding in Turkey{" "}
+          <h6 className="span-More2">
+            <span>tranding in Turkey</span>
             <img src="src/icons/More-2.png" alt="icon-More-2" />
-            <br></br>
-          </span>
-          <img src="src/icons/Explore.png" alt="icon-Explore" />
-          SQUID{" "}
+          </h6>
+          <img
+            src="src/icons/Explore.png"
+            alt="icon-Explore"
+            className="Explore-Quid"
+          />
+          SQUID
           <span>
             {" "}
             <br></br>2,066 tweets
@@ -31,7 +32,6 @@ function Trends() {
         </h5>
         <h5>
           <span>
-            {" "}
             tranding in Turkey
             <img src="src/icons/More-2.png" alt="icon-More-2" />
             <br></br>

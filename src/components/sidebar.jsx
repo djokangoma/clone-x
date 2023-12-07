@@ -5,7 +5,7 @@ import ButtonTwitter from "./button-tweet";
 
 function Sidebar() {
   return (
-    <div>
+    <div className="Sidebar">
       <SidebarNav />
       <ButtonTwitter />
 
