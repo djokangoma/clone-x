@@ -198,6 +198,10 @@ body {
   height: 100vh;
 }
 
+.avatar-profile {
+  width: 50px;
+}
+
 .navlink {
   padding: 0.3rem 2.3rem;
   padding-right: 15px;
@@ -225,8 +229,12 @@ ul li a {
   margin-left: 2.5rem;
 }
 
-.box-profile {
-  margin-bottom: 5rem;
+.private-profile {
+  display: flex;
+}
+
+box-profile {
+  margin-bottom: 10px;
 }
 .sidebar {
   display: 400px;
