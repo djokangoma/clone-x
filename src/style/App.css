@@ -210,3 +210,12 @@ ul {
 ul li a {
   text-decoration: none;
 }
+
+.btn-tweet {
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+}
+
+.box-profile {
+  margin-bottom: 5rem;
+}
