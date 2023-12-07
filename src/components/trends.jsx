@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonFollow from "./button-follow";
 
 function Trends() {
   return (
@@ -8,6 +9,7 @@ function Trends() {
         <img src="src/icons/Search.png" alt="icon-search" />
         search twitter
       </button>
+
       <div className="trendForYou">
         <h5>
           {" "}
@@ -40,26 +42,24 @@ function Trends() {
         </h5>
         <h5>
           <span>
-            {" "}
-            tranding in Turkey{" "}
+            tranding in Turkey
             <img src="src/icons/More-2.png" alt="icon-More-2" />
             <br></br>
           </span>
           <img src="src/icons/Explore.png" alt="icon-Explore" />
-          SQUID{" "}
+          SQUID
           <span>
             <br></br>2,066 tweets
           </span>
         </h5>
         <h5>
           <span>
-            {" "}
-            tranding in Turkey{" "}
+            tranding in Turkey
             <img src="src/icons/More-2.png" alt="icon-More-2" />
             <br></br>
           </span>
           <img src="src/icons/Explore.png" alt="icon-Explore" />
-          SQUID{" "}
+          SQUID
           <span>
             <br></br>2,066 tweets
           </span>
@@ -70,23 +70,23 @@ function Trends() {
       <div className="whoToFollow">
         <h5>
           <img src="src/images/image 1.png" alt="image1" />
-          The New York Times{" "}
-          <img src="src/icons/Verified.png" alt="icon-Verified" />{" "}
-          <button>Follow</button>
+          The New York Times
+          <img src="src/icons/Verified.png" alt="icon-Verified" />
+          <ButtonFollow />
         </h5>
         <h5>
           <img
             src="src/images/tweet-profile-photo.png"
             alt="tweet-profile-photo"
           />
-          CNN <img src="src/icons/Verified.png" alt="icon-Verified" />{" "}
-          <button>Follow</button>
+          CNN <img src="src/icons/Verified.png" alt="icon-Verified" />
+          <ButtonFollow />
         </h5>
         <h5>
           <img src="src/icons/image 1.png" alt="image 1" />
           Twitter
-          <img src="src/icons/Verified.png" alt="icon-Verified" />{" "}
-          <button>Follow</button>
+          <img src="src/icons/Verified.png" alt="icon-Verified" />
+          <ButtonFollow />
         </h5>
         <a href="">Show more</a>
       </div>

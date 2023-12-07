@@ -36,7 +36,7 @@ function TweetBody() {
       <TweetTitle
         text="The New York Times"
         image="src/icons/Verified.png"
-        span="@nytimes 9h"
+        span="@mytimes 2h"
       />
       <TweetText text="Gardening boomed during the pandemic. Six Black writers share how               it has helped them re-establish, and reimagine, a connection to cultivation and                the land" />
       <TweetAction />
