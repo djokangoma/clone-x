@@ -1,5 +1,7 @@
 import React from "react";
 import ButtonFollow from "./button-follow";
+import TrendSquid from "./trend-squid";
+import ShowMore from "./show-more";
 
 function Trends() {
   return (
@@ -13,58 +15,11 @@ function Trends() {
         <h5 className="trend-setting">
           Trends for you <img src="src/icons/Settings.png" alt="icon-setting" />
         </h5>
-
-        <h5>
-          <h6 className="span-More2">
-            <span>tranding in Turkey</span>
-            <img src="src/icons/More-2.png" alt="icon-More-2" />
-          </h6>
-          <img
-            src="src/icons/Explore.png"
-            alt="icon-Explore"
-            className="Explore-Quid"
-          />
-          SQUID
-          <span>
-            {" "}
-            <br></br>2,066 tweets
-          </span>
-        </h5>
-        <h5>
-          <span>
-            tranding in Turkey
-            <img src="src/icons/More-2.png" alt="icon-More-2" />
-            <br></br>
-          </span>
-          <img src="src/icons/Explore.png" alt="icon-Explore" />
-          SQUID <br></br>
-          <span>2,066 tweets</span>
-        </h5>
-        <h5>
-          <span>
-            tranding in Turkey
-            <img src="src/icons/More-2.png" alt="icon-More-2" />
-            <br></br>
-          </span>
-          <img src="src/icons/Explore.png" alt="icon-Explore" />
-          SQUID
-          <span>
-            <br></br>2,066 tweets
-          </span>
-        </h5>
-        <h5>
-          <span>
-            tranding in Turkey
-            <img src="src/icons/More-2.png" alt="icon-More-2" />
-            <br></br>
-          </span>
-          <img src="src/icons/Explore.png" alt="icon-Explore" />
-          SQUID
-          <span>
-            <br></br>2,066 tweets
-          </span>
-        </h5>
-        <a href="">Show more</a>
+        <TrendSquid />
+        <TrendSquid />
+        <TrendSquid />
+        <TrendSquid />
+        <ShowMore />
       </div>
 
       <div className="whoToFollow">
