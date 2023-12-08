@@ -7,21 +7,22 @@ function Sidebar() {
   return (
     <div className="Sidebar">
       <SidebarNav />
-      <ButtonTwitter className="btn-twitterSidebar" />
+
+      <ButtonTwitter button={"btn-tweet2"} />
 
       <div className="box-profile">
-        <ProfileAvatar style={"avatar-profile"} />
+        <ProfileAvatar image={"avatar-profile"} />
 
-        <div className="pp">
-          <p className="private-profile">
-            Bradley Ortiz <img src="src/icons/Private.png" alt="icon-private" />
-          </p>
-          <input
-            type="text"
-            placeholder="@Bradley"
-            className="tweet-editor-input"
-          />
+        <div>
+          <div>
+            <p className="private-profile">
+              Bradley Ortiz
+              <img src="src/icons/Private.png" alt="icon-private" />
+            </p>
+          </div>
+          <p className="name-bradley">@Bradley..</p>
         </div>
+
         <img src="src/icons/More-2.png" alt="icon-More-2" />
       </div>
     </div>

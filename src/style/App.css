@@ -195,15 +195,15 @@ body {
 
 .Sidebar {
   width: 20vw;
-  height: 100vh;
-}
-
-.avatar-profile {
-  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2.5rem;
 }
 
 .navlink {
-  padding: 0.3rem 2.3rem;
+  padding: 0.3rem;
   padding-right: 15px;
   display: flex;
   align-items: center;
@@ -224,20 +224,32 @@ ul li a {
   text-decoration: none;
 }
 
-.btn-tweet {
-  margin-top: 1rem;
-  margin-left: 2.5rem;
+.btn-tweet2 {
+  width: 15vw;
+  margin-bottom: 120vh;
+  text-transform: capitalize;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #1d9bf0;
+  color: white;
+  font-size: 1rem;
 }
 
+.avatar-profile {
+  width: 50px;
+}
+
+.box-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .private-profile {
   display: flex;
 }
-
-box-profile {
-  margin-bottom: 10px;
-}
-.sidebar {
-  display: 400px;
+.name-bradley {
+  opacity: 0.7;
 }
 
 .trends {
