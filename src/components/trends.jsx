@@ -43,7 +43,7 @@ function Trends() {
           <img src="src/icons/Verified.png" alt="icon-Verified" />
           <ButtonFollow />
         </h5>
-        <a href="">Show more</a>
+        <ShowMore />
       </div>
       <p>terms of service Privacy Police cookie police</p>
       <p>
