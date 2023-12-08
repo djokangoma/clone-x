@@ -1,4 +1,5 @@
 import React from "react";
+import TweetSitle from "./tweet-title";
 
 function TweetAvatar({ image }) {
   return (
@@ -118,6 +119,7 @@ export default function Tweets() {
       <TweetEnd />
       <TweetEnd />
       <TweetEnd />
+      <TweetSitle image={"imgTwitter"} texte={"Twitter"} image2={"verified"} />
     </div>
   );
 }
