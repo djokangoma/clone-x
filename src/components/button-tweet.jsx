@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ButtonTwitter({ button, tweet }) {
+export default function ButtonTwitter({ button, Tweet }) {
   return (
     <div>
-      <button className={button}>{tweet}</button>
+      <button className={button}>{Tweet} </button>
     </div>
   );
 }

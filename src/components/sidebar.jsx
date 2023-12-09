@@ -8,7 +8,7 @@ function Sidebar() {
     <div className="Sidebar">
       <SidebarNav />
 
-      <ButtonTwitter button={"btn-tweet2"} />
+      <ButtonTwitter button={"btn-tweet2"} Tweet={"Twitter"} />
 
       <div className="box-profile">
         <ProfileAvatar image={"avatar-profile"} />

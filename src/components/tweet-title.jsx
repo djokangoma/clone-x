@@ -16,9 +16,8 @@ export default function TweetSitle({ image, texte1, texte2, image2 }) {
           </div>
           <img src={verified} alt="icon-verified" className={image2} />
         </div>
-        <ButtonFollow />
+        <ButtonTwitter button="button" Tweet="Follow" />
       </div>
-      <ButtonTwitter button="foll" tweet="Follow" />
     </div>
   );
 }

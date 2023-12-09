@@ -18,7 +18,7 @@ function TweetEditor() {
             <img src="src/icons/Group.png" />
             <img src="src/icons/Schedule.png" />
           </div>
-          <ButtonTwitter button={"button"} />
+          <ButtonTwitter button="button" Tweet={"Tweet"} />
         </div>
       </div>
     </div>
