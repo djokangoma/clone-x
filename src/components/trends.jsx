@@ -2,6 +2,7 @@ import React from "react";
 import ButtonFollow from "./button-follow";
 import TrendSquid from "./trend-squid";
 import ShowMore from "./show-more";
+import TweetSitle from "./tweet-title";
 
 function Trends() {
   return (
@@ -43,6 +44,14 @@ function Trends() {
           <img src="src/icons/Verified.png" alt="icon-Verified" />
           <ButtonFollow />
         </h5>
+
+        <TweetSitle
+          image={"imgTwitter"}
+          texte1={"Twitter"}
+          texte2={"@ Twitter"}
+          image2={"verified"}
+        />
+
         <ShowMore />
       </div>
       <p>terms of service Privacy Police cookie police</p>

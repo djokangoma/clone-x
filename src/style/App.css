@@ -327,3 +327,16 @@ ul li a {
   color: black;
   font-size: 1rem;
 }
+.box-tweetTitle {
+  display: flex;
+  justify-content: space-around;
+}
+.children-tweetTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.parag {
+  opacity: 0.5;
+}
