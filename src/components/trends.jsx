@@ -23,30 +23,21 @@ function Trends() {
       </div>
 
       <div className="whoToFollow">
-        <h5>
-          <img src="src/images/image 1.png" alt="image1" />
-          The New York Times
-          <img src="src/icons/Verified.png" alt="icon-Verified" />
-        </h5>
-        <h5>
-          <img
-            src="src/images/tweet-profile-photo.png"
-            alt="tweet-profile-photo"
-          />
-          CNN <img src="src/icons/Verified.png" alt="icon-Verified" />
-        </h5>
-        <h5>
-          <img src="src/icons/image 1.png" alt="image 1" />
-          Twitter
-          <img src="src/icons/Verified.png" alt="icon-Verified" />
-        </h5>
-
+        <h3>who to Follow</h3>
         <TweetSitle
-          image="src/i"
+          image={"src/images/image 1.png"}
           texte1={"CNN"}
           texte2={"@ CNN"}
           image2={"verified"}
         />
+
+        <TweetSitle
+          image={"src/icons/tweet-profile-photo.png"}
+          texte1={"CNN"}
+          texte2={"@ CNN"}
+          image2={"verified"}
+        />
+
         <TweetSitle
           image={"src/icons/image 1.png"}
           texte1={"Twitter"}
