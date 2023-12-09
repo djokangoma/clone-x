@@ -43,6 +43,12 @@ function Trends() {
 
         <TweetSitle
           image={"imgTwitter"}
+          texte1={"CNN"}
+          texte2={"@ CNN"}
+          image2={"verified"}
+        />
+        <TweetSitle
+          image={"imgTwitter"}
           texte1={"Twitter"}
           texte2={"@ Twitter"}
           image2={"verified"}
