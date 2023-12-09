@@ -119,7 +119,6 @@ export default function Tweets() {
       <TweetEnd />
       <TweetEnd />
       <TweetEnd />
-      <TweetSitle image={"imgTwitter"} texte={"Twitter"} image2={"verified"} />
     </div>
   );
 }

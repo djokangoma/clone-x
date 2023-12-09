@@ -6,11 +6,11 @@ import TweetSitle from "./tweet-title";
 function Trends() {
   return (
     <div className="trends">
-      <input type="text" />
-      <button className="btn-searchTwitter">
-        <img src="src/icons/Search.png" alt="icon-search" />
-        search twitter
-      </button>
+      <input
+        type="text"
+        placeholder=" search twitter"
+        className="btn-searchTwitter"
+      />
 
       <div className="trendForYou">
         <h5 className="trend-setting">
@@ -28,7 +28,7 @@ function Trends() {
         <TweetSitle
           image={"src/images/image 1.png"}
           texte1={"The New York Times"}
-          texte2={"@mytimes 2h"}
+          texte2={"@ CNN"}
           image2={"verified"}
         />
 
