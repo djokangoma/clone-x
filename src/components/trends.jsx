@@ -6,6 +6,7 @@ import TweetSitle from "./tweet-title";
 function Trends() {
   return (
     <div className="trends">
+      <input type="text" />
       <button className="btn-searchTwitter">
         <img src="src/icons/Search.png" alt="icon-search" />
         search twitter
@@ -26,8 +27,8 @@ function Trends() {
         <h3>who to Follow</h3>
         <TweetSitle
           image={"src/images/image 1.png"}
-          texte1={"CNN"}
-          texte2={"@ CNN"}
+          texte1={"The New York Times"}
+          texte2={"@mytimes 2h"}
           image2={"verified"}
         />
 
