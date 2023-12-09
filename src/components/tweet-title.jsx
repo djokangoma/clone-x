@@ -1,7 +1,6 @@
 import React from "react";
 import verified from "../icons/Verified.png";
 import imgTwitter from "../icons/image 1.png";
-import ButtonFollow from "./button-follow";
 import ButtonTwitter from "./button-tweet";
 
 export default function TweetSitle({ image, texte1, texte2, image2 }) {

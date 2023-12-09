@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonFollow from "./button-follow";
 import TrendSquid from "./trend-squid";
 import ShowMore from "./show-more";
 import TweetSitle from "./tweet-title";
@@ -28,7 +27,6 @@ function Trends() {
           <img src="src/images/image 1.png" alt="image1" />
           The New York Times
           <img src="src/icons/Verified.png" alt="icon-Verified" />
-          <ButtonFollow />
         </h5>
         <h5>
           <img
@@ -36,13 +34,11 @@ function Trends() {
             alt="tweet-profile-photo"
           />
           CNN <img src="src/icons/Verified.png" alt="icon-Verified" />
-          <ButtonFollow />
         </h5>
         <h5>
           <img src="src/icons/image 1.png" alt="image 1" />
           Twitter
           <img src="src/icons/Verified.png" alt="icon-Verified" />
-          <ButtonFollow />
         </h5>
 
         <TweetSitle
