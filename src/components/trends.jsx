@@ -42,13 +42,13 @@ function Trends() {
         </h5>
 
         <TweetSitle
-          image={"imgTwitter"}
+          image="src/i"
           texte1={"CNN"}
           texte2={"@ CNN"}
           image2={"verified"}
         />
         <TweetSitle
-          image={"imgTwitter"}
+          image={"src/icons/image 1.png"}
           texte1={"Twitter"}
           texte2={"@ Twitter"}
           image2={"verified"}

@@ -1,6 +1,5 @@
 import React from "react";
 import verified from "../icons/Verified.png";
-import imgTwitter from "../icons/image 1.png";
 import ButtonTwitter from "./button-tweet";
 
 export default function TweetSitle({ image, texte1, texte2, image2 }) {
@@ -8,7 +7,8 @@ export default function TweetSitle({ image, texte1, texte2, image2 }) {
     <div>
       <div className="box-tweetTitle">
         <div className="children-tweetTitle">
-          <img src={imgTwitter} className={image} alt="" />
+          <img src={image} alt="" />
+
           <div>
             <p>{texte1} </p>
             <p className="parag">{texte2} </p>
