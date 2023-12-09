@@ -28,7 +28,7 @@ function Trends() {
         <TweetSitle
           image={"src/images/image 1.png"}
           texte1={"The New York Times"}
-          texte2={"@ CNN"}
+          texte2={"@mytimes 2h"}
           image2={"verified"}
         />
 
