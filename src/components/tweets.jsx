@@ -74,7 +74,7 @@ function TweetContent() {
 function Tweet() {
   return (
     <div className="tweet">
-      <TweetAvatar image="src/images/tweet-profile-photo.png" />
+      <TweetAvatar image="src/icons/tweet-profile-photo.png" />
       <div className="tweet-body">
         <TweetTitle text="CNN" image="src/icons/Verified.png" span="@CNN 7m" />
         <TweetText text='President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.' />

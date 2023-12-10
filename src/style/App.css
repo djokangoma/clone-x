@@ -318,15 +318,6 @@ ul li a {
   margin: 5px;
 }
 
-.button-follow {
-  text-transform: capitalize;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 50px;
-  background-color: white;
-  color: black;
-  font-size: 1rem;
-}
 .box-tweetTitle {
   display: flex;
   justify-content: space-around;
@@ -336,6 +327,7 @@ ul li a {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  margin-right: 10px;
 }
 .parag {
   opacity: 0.5;
