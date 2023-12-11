@@ -325,13 +325,11 @@ ul li a {
 .box-tweetTitle {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .children-tweetTitle {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  margin-right: 10px;
+  flex-direction: column;
 }
 .parag {
   opacity: 0.5;
