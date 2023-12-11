@@ -253,13 +253,13 @@ ul li a {
 
 .btn-searchTwitter {
   text-transform: capitalize;
-  width: 19.5vw;
+  width: 350px;
+  height: 42px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 3vh;
   border: none;
-  border-radius: 50px;
+  border-radius: 42px;
   background-color: rgb(32, 35, 39);
   color: white;
   font-size: 1rem;
@@ -278,12 +278,14 @@ ul li a {
   border: 1px solid transparent;
   border-radius: 15px;
   background-color: rgb(32, 35, 39);
+  padding: 5px 10px;
 }
 
 .trend-setting {
   display: flex;
   align-items: center;
-  gap: 9vw;
+  gap: 11vw;
+  height: 48px;
 }
 
 .trendsquid {
