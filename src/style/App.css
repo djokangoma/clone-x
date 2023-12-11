@@ -276,7 +276,7 @@ ul li a {
   width: 350px;
   height: 426px;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 2px 10px;
   background-color: rgb(32, 35, 39);
   margin: 5px;
@@ -316,7 +316,7 @@ ul li a {
   width: 350px;
   height: 314px;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 8px;
   background-color: rgb(32, 35, 39);
   margin: 5px;
@@ -333,4 +333,8 @@ ul li a {
 }
 .parag {
   opacity: 0.5;
+}
+.box-paragraphe {
+  width: 350px;
+  height: 40px;
 }

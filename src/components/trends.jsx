@@ -41,12 +41,14 @@ function Trends() {
 
         <ShowMore />
       </div>
-      <p>terms of service Privacy Police cookie police</p>
-      <p>
-        imprint Ads info More{" "}
-        <img src="src/icons/More-2.png" alt="icon-More2" />
-        2021 twitter,inc
-      </p>
+      <div className="box-paragraphe">
+        <p>terms of service Privacy Police cookie police</p>
+        <p>
+          imprint Ads info More{" "}
+          <img src="src/icons/More-2.png" alt="icon-More2" />
+          2021 twitter,inc
+        </p>
+      </div>
     </div>
   );
 }
