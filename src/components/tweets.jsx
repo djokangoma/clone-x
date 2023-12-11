@@ -1,5 +1,4 @@
 import React from "react";
-import TweetSitle from "./tweet-title";
 
 function TweetAvatar({ image }) {
   return (
