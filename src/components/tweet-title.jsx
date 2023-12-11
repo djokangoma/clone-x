@@ -2,7 +2,7 @@ import React from "react";
 import verified from "../icons/Verified.png";
 import ButtonTwitter from "./button-tweet";
 
-export default function TweetSitle({ image, texte1, texte2, image2 }) {
+export default function TweetSitle({ texte1, texte2, image2 }) {
   return (
     <div className="box-tweetTitle">
       <div className="children-tweetTitle">
