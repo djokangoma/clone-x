@@ -333,6 +333,10 @@ ul li a {
   width: 350px;
   height: 72px;
 }
+.parent-tweetTitle {
+  display: flex;
+  align-items: center;
+}
 .children-tweetTitle {
   display: flex;
   flex-direction: column;

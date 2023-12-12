@@ -2,6 +2,7 @@ import React from "react";
 import TrendSquid from "./trend-squid";
 import ShowMore from "./show-more";
 import TweetSitle from "./tweet-title";
+import TweetAvatar from "./tweet-avatar";
 
 function Trends() {
   return (
@@ -25,19 +26,29 @@ function Trends() {
 
       <div className="whoToFollow">
         <h3>who to Follow</h3>
-        <TweetSitle
-          texte1={"The New York Times"}
-          texte2={"@mytimes 2h"}
-          image2={"verified"}
-        />
 
-        <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
+        <div className="parent-tweetTitle">
+          <TweetAvatar image="src/images/image 1.png" />
+          <TweetSitle
+            texte1={"The New York Times"}
+            texte2={"@mytimes 2h"}
+            image2={"verified"}
+          />
+        </div>
 
-        <TweetSitle
-          texte1={"Twitter"}
-          texte2={"@ Twitter"}
-          image2={"verified"}
-        />
+        <div className="parent-tweetTitle">
+          <TweetAvatar image="src/images/image 1.png" />
+          <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
+        </div>
+
+        <div className="parent-tweetTitle">
+          <TweetAvatar image="src/images/image 1.png" />
+          <TweetSitle
+            texte1={"Twitter"}
+            texte2={"@ Twitter"}
+            image2={"verified"}
+          />
+        </div>
 
         <ShowMore />
       </div>
