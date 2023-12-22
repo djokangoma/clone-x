@@ -37,7 +37,7 @@ function Trends() {
         </div>
 
         <div className="parent-tweetTitle">
-          <TweetAvatar image="src/icons/image 1.png" />
+          <TweetAvatar image="src/icons/Tweet-Profile-Photo.png" />
           <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
         </div>
 
