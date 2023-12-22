@@ -28,7 +28,7 @@ function Trends() {
         <h3>who to Follow</h3>
 
         <div className="parent-tweetTitle">
-          <TweetAvatar image="src/icons/Tweet-Profile-Photo" />
+          <TweetAvatar image="src/images/image 1.png" />
           <TweetSitle
             texte1={"The New York Times"}
             texte2={"@mytimes 2h"}
