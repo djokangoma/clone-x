@@ -194,8 +194,8 @@ body {
 }
 
 .Sidebar {
-  width: 20vw;
-  height: 100%;
+  width: 275px;
+  height: 1024px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
