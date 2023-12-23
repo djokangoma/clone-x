@@ -218,6 +218,8 @@ body {
 ul {
   display: flex;
   flex-direction: column;
+  width: 223px;
+  height: 528px;
 }
 
 ul li a {
