@@ -253,6 +253,7 @@ ul li a {
   gap: 1rem;
   width: 251px;
   height: 64px;
+  margin-top: 330px;
 }
 .private-profile {
   display: flex;
