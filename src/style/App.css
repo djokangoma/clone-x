@@ -232,7 +232,8 @@ ul li a {
 .btn-tweet2 {
   width: 225px;
   height: 52px;
-  margin-bottom: 120vh;
+  margin-bottom: 182px;
+  margin-top: 182px;
   text-transform: capitalize;
   padding: 0.7rem 1.5rem;
   border: none;
