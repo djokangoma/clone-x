@@ -223,6 +223,8 @@ ul {
 ul li a {
   text-decoration: none;
   color: white;
+  width: 251px;
+  height: 50px;
 }
 
 .btn-tweet2 {
