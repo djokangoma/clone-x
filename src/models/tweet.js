@@ -1,10 +1,31 @@
-import {}
-const tweets = [
-  {
-    id: "1",
-    Text1: "CNN",
-    span: "@CNN 7m",
-    Text2:
-      'President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.',
-  },
-];
+import {Nom de la variable1 as Nom de l'image} from "chemin de l'image"
+
+import {Nom de la variable2 as Nom de l'image} from "chemin de l'image"
+
+import {Nom de la variable3 as Nom de l'image} from "chemin de l'image"
+
+ tweetData.js
+
+import [nom de la variable1, nom de la variable 2, nom de la variable3] from "chemin de Img-service.js"
+
+const tweetData = [
+     {
+       id: 1,
+       avatar: nom de la variable,
+       tweetText: "Tu écrit ton text"
+    },
+     {
+       id: 2,
+       avatar: nom de la variable,
+       tweetText: "Tu écrit ton text"
+    },
+    {
+       id: 3,
+       avatar: nom de la variable,
+       tweetText: "Tu écrit ton text"
+    },
+]
+
+
+export default tweetData;
+
