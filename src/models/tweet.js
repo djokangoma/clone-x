@@ -1,8 +1,8 @@
-import {Nom de la variable1 as Nom de l'image} from "chemin de l'image"
+import {Nom delavariable1 as Nom de l'image} from "chemin de l'image"
 
-import {Nom de la variable2 as Nom de l'image} from "chemin de l'image"
+import {Nom delavariable2 as Nom de l'image} from "chemin de l'image"
 
-import {Nom de la variable3 as Nom de l'image} from "chemin de l'image"
+import {Nomdelavariable3 as Nom del'image} from "chemin de l'image"
 
  tweetData.js
 
