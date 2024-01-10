@@ -1,11 +1,11 @@
 import React from "react";
-import ProfileAvatar from "./avatar";
+import Avatar from "./avatar";
 import ButtonTwitter from "./button-tweet";
 
 function TweetEditor() {
   return (
     <div className="tweet-editor">
-      <ProfileAvatar />
+      <Avatar />
 
       <div className="tweet-editor-form">
         <input className="tweet-editor-input" placeholder="what's happening?" />

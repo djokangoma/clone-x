@@ -1,6 +1,6 @@
 import React from "react";
 import SidebarNav from "./sidebarnav";
-import avatar from "./avatar";
+import Avatar from "./avatar";
 import ButtonTwitter from "./button-tweet";
 
 function Sidebar() {
@@ -11,7 +11,7 @@ function Sidebar() {
       <ButtonTwitter button={"btn-tweet2"} Tweet={"Twitter"} />
 
       <div className="box-profile">
-        <avatar image={"avatar-profile"} />
+        <Avatar image={"avatar-profile"} />
 
         <div>
           <div>
