@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileAvatar from "./profile-avatar";
+import ProfileAvatar from "./avatar";
 import ButtonTwitter from "./button-tweet";
 
 function TweetEditor() {
