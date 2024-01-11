@@ -1,20 +1,15 @@
-//  import {Nom delavariable1 as Nom de l'image} from "chemin de l'image"
+import VerifiedImg from "../icons/Verified.png";
+import TwitterImg from "../icons/image1.png";
+import TweetAvatarRouge from "../icons/Tweet-Profile-Photo.png";
+import TweetAvatarBlack from "../images/image1.png";
+import TweetAvatarFlower from "../images/tweet-image.png";
 
-// import {Nom delavariable2 as Nom de l'image} from "chemin de l'image"
-
-// import {Nomdelavariable3 as Nom del'image} from "chemin de l'image"
-
-//  tweetData.js
-
-// import [nom de la variable1, nom de la variable 2, nom de la variable3] from "chemin de Img-service.js"
-
-// const tweetData = [
-//      {
-//        id: 1,
-//        avatar: nom de la variable,
-//        tweetText: "Tu écrit ton text"
-//     },
-//      {
+const tweetData = [
+      {
+        id: 1,
+        avatar: TweetAvatarRouge,
+        tweetText: "Tu écrit ton text"
+     },      {
 //        id: 2,
 //        avatar: nom de la variable,
 //        tweetText: "Tu écrit ton text"
