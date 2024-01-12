@@ -365,3 +365,46 @@ ul li a {
 .last-image {
   margin-right: 10px;
 }
+.userProfile {
+  background-color: white;
+  color: black;
+}
+.userProfile h1 {
+  font-weight: 900;
+  margin-left: 20px;
+}
+.userProfile p {
+  margin-left: 20px;
+}
+.userProfileAvatar {
+  background-color: #6e767d;
+  width: 800px;
+  height: 300px;
+  position: relative;
+}
+.pagePofileUser {
+  width: 180px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.profileNameUser {
+  margin-top: 90px;
+  margin-left: 20px;
+}
+.para-profileNameUser {
+  overflow: 0.5;
+}
+.button-profileNameUser {
+  width: 180px;
+  height: 52px;
+  margin: -90px 0 800px 600px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: 900;
+}
