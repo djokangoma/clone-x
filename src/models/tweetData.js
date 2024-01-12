@@ -1,29 +1,56 @@
 import TwitterImg from "../icons/image1.png";
 import TweetAvatarRouge from "../icons/Tweet-Profile-Photo.png";
 import TweetAvatarBlack from "../images/image1.png";
+import Jaime from "../icons/React.png";
+import Message from "../icons/Reply.png";
+import Retweet from "../icons/Retweet.png";
+import Share from "../icons/Share.png";
+import flower from "../images/tweet-image.png";
+import Verified from "../icons/Verified.png";
 
 const tweetData = [
   {
     id: 1,
     avatar: TweetAvatarRouge,
+    tweetAuthor: "CNN",
+    tweetVeried: Verified,
+    tweetDetail: "@CNN",
+    tweetTime: "7m",
     tweetText:
       'President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.',
+    tweetImage: null,
+    tweetJaime: Jaime,
+    tweetMessage: Message,
+    tweetRetweet: Retweet,
+    tweetShare: Share,
   },
   {
     id: 2,
     avatar: TweetAvatarBlack,
+    tweetAuthor: "The New York Times ",
+    tweetVeried: Verified,
+    tweetDetail: "@The New York Times",
+    tweetTime: "2h",
     tweetText:
       "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
+    tweetImage: flower,
+    tweetJaime: Jaime,
+    tweetMessage: Message,
+    tweetRetweet: Retweet,
+    tweetShare: Share,
   },
   {
     id: 3,
     avatar: TwitterImg,
+    tweetAuthor: "Twitter",
+    tweetVeried: Verified,
+    tweetDetail: "@twitter",
     tweetText: "BIG NEWS lol jk still Twitter",
-  },
-  {
-    id: 4,
-    avatar: TwitterImg,
-    tweetText: "hello literally lol jk still twitter",
+    tweetImage: null,
+    tweetJaime: Jaime,
+    tweetMessage: Message,
+    tweetRetweet: Retweet,
+    tweetShare: Share,
   },
 ];
 

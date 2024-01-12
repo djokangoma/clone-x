@@ -1,12 +1,14 @@
 import React from "react";
-import TweetAvatar from "./tweet-avatar";
-import TweetTitle from "./tweet-title";
+import tweetData from "../models/tweetData";
+import Tweet from "./tweet";
 
 export default function Tweetss() {
+  // console.log(tweetData);
   return (
     <div className="tweets">
-      <TweetAvatar />
-      <TweetTitle />
+      {/* {tweetData.map((tweet, index) => {
+        <Tweet tweet={tweet} key={index} />;
+      })} */}
     </div>
   );
 }

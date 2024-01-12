@@ -1,7 +1,7 @@
-import React from 'react';
-import Header from './../components/header';
-import TweetEditor from './../components/tweet-editor';
-import Tweets from './../components/tweets';
+import React from "react";
+import Header from "./../components/header";
+import TweetEditor from "./../components/tweet-editor";
+import Tweets from "./../components/tweets";
 
 function Home() {
   return (
@@ -9,7 +9,6 @@ function Home() {
       <Header />
       <TweetEditor />
       <Tweets />
-
     </main>
   );
 }
