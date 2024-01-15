@@ -33,11 +33,11 @@ export default function Tweet({
           </div>
           <div className="tweet-image">
             {tweetImage ? (
-              <></>
-            ) : (
               <>
-                <p>bonjour</p>
+                <img src={tweetImage} alt="img" />
               </>
+            ) : (
+              <></>
             )}
           </div>
           <TweetActions />{" "}

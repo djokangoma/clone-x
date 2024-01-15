@@ -84,7 +84,7 @@ export default function Tweets() {
             span={item.tweetDetail}
             time={item.tweetTime}
             text={item.tweetText}
-            tweetImag={item.tweetImage}
+            tweetImage={item.tweetImage}
           />
         </>
       ))}
