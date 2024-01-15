@@ -60,7 +60,7 @@ const tweetData = [
     tweetVeried: Certified,
     tweetDetail: "@twitter",
     tweetTime: "Oct 29",
-    tweetText: "BIG NEWS lol jk still Twitter",
+    tweetText: "hello literally everyone",
     tweetImage: null,
     tweetJaime: Jaime,
     tweetMessage: Message,
