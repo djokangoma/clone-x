@@ -15,31 +15,33 @@ export default function Tweet({
       <div className="tweet-avatar">
         <img src={avatarImage} alt="image" />
       </div>
-      <div className="tweet-body">
-        <div className="tweet-title">
-          {tweetAuthor}
-          <img src={image} className="Verified" />
-          <div className="tweet-title-details">
-            <p>
-              {span}
-              <span> . </span>
-              {time}
-            </p>
+      <div className="tweet-content">
+        <div className="tweet-body">
+          <div className="tweet-title">
+            {tweetAuthor}
+            <img src={image} className="Verified" />
+            <div className="tweet-title-details">
+              <p>
+                {span}
+                <span> . </span>
+                {time}
+              </p>
+            </div>
           </div>
+          <div className="tweet-text">
+            <p>{text}</p>
+          </div>
+          <div className="tweet-image">
+            {tweetImage ? (
+              <></>
+            ) : (
+              <>
+                <p>bonjour</p>
+              </>
+            )}
+          </div>
+          <TweetActions />{" "}
         </div>
-        <div className="tweet-text">
-          <p>{text}</p>
-        </div>
-        <div className="tweet-content">
-          {tweetImage ? (
-            <></>
-          ) : (
-            <>
-              <p>bonjour</p>
-            </>
-          )}
-        </div>
-        <TweetActions />{" "}
       </div>
     </div>
   );
