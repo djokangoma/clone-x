@@ -9,7 +9,7 @@ export default function TweetActions() {
   return (
     <div className="tweet-actions">
       <TweetAction icon={Message} value="0" />
-      <TweetAction icon={Retweet} value="0" />
+      <TweetAction icon={Retweet} value="10" />
       <TweetAction icon={Jaime} value="0" />
       <TweetAction icon={Share} />
     </div>

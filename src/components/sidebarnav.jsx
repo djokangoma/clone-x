@@ -20,7 +20,7 @@ function SidebarNav() {
       <li className="navlink">
         <NavLink to="/explore" className="icon-navlink">
           <img src="src/icons/Explore.png" alt="icon-explore" />
-          Explore
+          Explorei
         </NavLink>
       </li>
 
