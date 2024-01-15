@@ -11,7 +11,7 @@ export default function TweetActions() {
       <TweetAction icon={Message} value="0" />
       <TweetAction icon={Retweet} value="0" />
       <TweetAction icon={Jaime} value="0" />
-      <TweetAction icon={Share} value="0" />
+      <TweetAction icon={Share} />
     </div>
   );
 }
