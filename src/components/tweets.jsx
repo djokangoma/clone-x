@@ -1,5 +1,5 @@
 import React from "react";
-import tweetData from "../models/tweetData";
+import tweetData from "../modelss/tweetData";
 import Tweet from "./tweet";
 
 export default function Tweets() {
