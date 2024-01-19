@@ -1,11 +1,14 @@
 import React from "react";
 import Avatar from "./avatar";
 import ButtonTwitter from "./button-tweet";
+import { NavLink } from "react-router-dom";
 
 function TweetEditor() {
   return (
     <div className="tweet-editor">
-      <Avatar />
+      <NavLink to="/profile">
+        <Avatar />
+      </NavLink>
 
       <div className="tweet-editor-form">
         <input className="tweet-editor-input" placeholder="what's happening?" />
