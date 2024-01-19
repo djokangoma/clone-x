@@ -195,6 +195,9 @@ body {
   justify-content: center;
   gap: 20px;
 }
+.iconMessage:hover {
+  color: #1d9bf0;
+}
 
 .Sidebar {
   width: 275px;
