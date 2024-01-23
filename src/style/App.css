@@ -196,20 +196,29 @@ body {
   gap: 20px;
 }
 
+.messageIcon img,
+.retweetIcon img,
+.jaimeIcon img,
+.sharetIcon img {
+  padding: 5px;
+}
+
 .messageIcon {
   display: flex;
   align-items: center;
   gap: 5px;
 }
+
 .messageIcon:hover img {
-  background-color: blue;
+  background-color: #1d9bf0;
   opacity: 0.5;
+
   border-radius: 100%;
   cursor: pointer;
   display: flex;
 }
 .messageIcon:hover {
-  color: blue;
+  color: #1d9bf0;
   cursor: pointer;
 }
 
@@ -219,14 +228,14 @@ body {
   gap: 5px;
 }
 .retweetIcon:hover img {
-  background-color: rgb(242, 8, 8);
+  background-color: #1d9bf0;
   opacity: 0.5;
   border-radius: 100%;
   cursor: pointer;
   display: flex;
 }
 .retweetIcon:hover {
-  color: rgb(242, 8, 8);
+  color: #1d9bf0;
   cursor: pointer;
 }
 
@@ -236,23 +245,22 @@ body {
   gap: 5px;
 }
 .jaimeIcon:hover img {
-  background-color: rgb(12, 182, 86);
-  opacity: 0.5;
+  background-color: rgb(231, 107, 107);
   border-radius: 100%;
   cursor: pointer;
   display: flex;
 }
 .jaimeIcon:hover {
-  color: rgb(12, 182, 86);
-  background-color: rgba(rgb(12, 182, 86), green, blue, 0.5);
+  color: rgb(231, 107, 107);
   cursor: pointer;
 }
 
 .sharetIcon:hover img {
-  background-color: rgba(rgba(140, 9, 64, 0.536), green, blue, 0.5);
+  color: #1d9bf0;
+  background-color: #1d9bf0;
   cursor: pointer;
+  border-radius: 100%;
 }
-
 .Sidebar {
   width: 275px;
   height: 1024px;
