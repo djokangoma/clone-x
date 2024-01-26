@@ -1,8 +1,22 @@
 {
-  "current-user": {},
+  "current-user": {
+    "id": "1",
+    "avatar": "./public/icons/profile-photo.png",
+    "tweetAuthor": "Bradley Ortiz",
+    "tweetVeried": "/public/icons/verified.png",
+    "tweetDetail": "@Bradley.. ",
+
+    "tweetTime": "1m",
+    "tweetText": "",
+    "tweetImage": null,
+    "tweetJaime": "Jaime",
+    "tweetMessage": "Message",
+    "tweetRetweet": "Retweet",
+    "tweetShare": "Share"
+  },
   "tweets": [
     {
-      "id": "1",
+      "id": "2",
       "avatar": "./public/icons/Tweet-Profile-Photo.png",
       "tweetAuthor": "CNN",
       "tweetVeried": "/public/icons/verified.png",
@@ -17,7 +31,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "2",
+      "id": "3",
       "avatar": "./public/icons/image-1.png",
       "tweetAuthor": "The New York Times ",
       "tweetVeried": "/public/icons/verified.png",
@@ -31,7 +45,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "3",
+      "id": "4",
       "avatar": "./public/icons/image 1.png",
       "tweetAuthor": "Twitter",
       "tweetVeried": "/public/icons/verified.png",
@@ -45,7 +59,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "4",
+      "id": "5",
       "avatar": "./public/icons/image 1.png",
       "tweetAuthor": "Twitter",
       "tweetVeried": "/public/icons/verified.png",
@@ -59,7 +73,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "5",
+      "id": "6",
       "avatar": "./public/icons/image 1.png",
       "tweetAuthor": "Twitter",
       "tweetVeried": "/public/icons/verified.png",
