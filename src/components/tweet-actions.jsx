@@ -6,7 +6,7 @@ import Share from "../icons/Share.png";
 
 export default function TweetActions() {
   return (
-    <div className="tweet-actions">
+    <div className="tweet-actions flex justify-center items-center gap-5 text-gray-700 text-base">
       <TweetAction icon={Message} value="0" customClassName="messageIcon" />
       <TweetAction icon={Retweet} value="10" customClassName="retweetIcon" />
       <TweetAction icon={Jaime} value="0" customClassName="jaimeIcon" />
