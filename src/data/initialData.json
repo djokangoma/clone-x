@@ -1,6 +1,5 @@
 {
   "current-user": {
-    "id": "1",
     "avatar": "./public/icons/profile-photo.png",
     "tweetAuthor": "Bradley Ortiz",
     "tweetVeried": "/public/icons/verified.png",
@@ -16,7 +15,7 @@
   },
   "tweets": [
     {
-      "id": "2",
+      "id": "1",
       "avatar": "./public/icons/Tweet-Profile-Photo.png",
       "tweetAuthor": "CNN",
       "tweetVeried": "/public/icons/verified.png",
@@ -31,7 +30,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "3",
+      "id": "2",
       "avatar": "./public/icons/image-1.png",
       "tweetAuthor": "The New York Times ",
       "tweetVeried": "/public/icons/verified.png",
@@ -45,7 +44,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "4",
+      "id": "3",
       "avatar": "./public/icons/image 1.png",
       "tweetAuthor": "Twitter",
       "tweetVeried": "/public/icons/verified.png",
@@ -59,7 +58,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "5",
+      "id": "4",
       "avatar": "./public/icons/image 1.png",
       "tweetAuthor": "Twitter",
       "tweetVeried": "/public/icons/verified.png",
@@ -73,7 +72,7 @@
       "tweetShare": "Share"
     },
     {
-      "id": "6",
+      "id": "5",
       "avatar": "./public/icons/image 1.png",
       "tweetAuthor": "Twitter",
       "tweetVeried": "/public/icons/verified.png",

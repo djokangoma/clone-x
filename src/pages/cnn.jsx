@@ -1,18 +1,19 @@
 import React from "react";
-import TweetAvatar from "../components/tweet-avatar";
+import { useParams } from "react-router-dom";
+import jsonDatas from "../data/initialData.json";
+// import TweetAvatar from "../components/tweet-avatar";
 
 export default function CNN() {
+  const { idProfile } = useParams();
+  const jsonTweets = jsonDatas.tweets;
+  const profile = jsonTweets.find((element) => (element.id = idProfile));
+  console.log(profile);
   return (
     <div>
-      <h1>CNN</h1>
+      <h1>{profile.tweetAuthor}</h1>
       <p> 0 post </p>
-      <TweetAvatar image="../icons/Tweet-Profile-Photo.png" />
-      <p>
-        'President Joe Biden touted a new agreement reached with the European
-        Union to ease Trump-era tariffs on aluminum and steel as a "major
-        breakthrough" that would serve to both strengthen the US steel industry
-        and combat the global climate crisis.
-      </p>
+      <TweetAvatar image={profile.avatar} />
+      <p>{profile.tweetText}</p>
     </div>
   );
 }

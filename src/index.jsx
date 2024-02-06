@@ -13,6 +13,7 @@ import Bookmarks from "./pages/bookmarks";
 import Lists from "./pages/lists";
 import Profile from "./pages/profile";
 import More from "./pages/more";
+import CNN from "./pages/cnn";
 
 const router = createBrowserRouter([
   {
@@ -20,10 +21,6 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
       {
         path: "home",
         element: <Home />,
@@ -49,9 +46,15 @@ const router = createBrowserRouter([
         element: <Lists />,
       },
       {
-        path: "profile",
+        path: "/profile",
         element: <Profile />,
       },
+      // children[
+      //   {
+      //     path: ":id",
+      //     element: <CNN />,
+      //   }
+      // ],
       {
         path: "more",
         element: <More />,

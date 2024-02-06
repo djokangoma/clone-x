@@ -11,6 +11,7 @@ export default function Tweets() {
       {initialData.tweets.map((item) => (
         <Tweet
           key={item.id}
+          identifiant={item.id}
           avatarImage={item.avatar}
           tweetAuthor={item.tweetAuthor}
           image={item.tweetVeried}

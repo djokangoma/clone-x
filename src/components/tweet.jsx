@@ -1,7 +1,9 @@
 import React from "react";
 import TweetActions from "./tweet-actions";
+import { Link } from "react-router-dom";
 
 export default function Tweet({
+  identifiant,
   text,
   avatarImage,
   image,
@@ -13,11 +15,13 @@ export default function Tweet({
   return (
     <div className="tweet flex justify-start items-start gap-5 py-1.5 px-1 border-b border-gray-700">
       <div className="tweet-avatar ">
-        <img
-          src={avatarImage}
-          alt="image"
-          className="w-full h-16 rounded-full"
-        />
+        <Link to={`/profile/${identifiant}`}>
+          <img
+            src={avatarImage}
+            alt="image"
+            className="w-full h-16 rounded-full"
+          />
+        </Link>
       </div>
       <div className="tweet-content flex flex-col items-start justify-start gap-30 w-full">
         <div className="tweet-body flex flex-col gap-0.5">
