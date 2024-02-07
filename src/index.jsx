@@ -13,7 +13,7 @@ import Bookmarks from "./pages/bookmarks";
 import Lists from "./pages/lists";
 import Profile from "./pages/profile";
 import More from "./pages/more";
-import CNN from "./pages/cnn";
+import OthersProfile from "./pages/otherProfile";
 
 const router = createBrowserRouter([
   {
@@ -49,12 +49,11 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <Profile />,
       },
-      // children[
-      //   {
-      //     path: ":id",
-      //     element: <CNN />,
-      //   }
-      // ],
+
+      {
+        path: "/profile/:id",
+        element: <OthersProfile />,
+      },
       {
         path: "more",
         element: <More />,
