@@ -7,16 +7,16 @@ export default function OthersProfile() {
   const params = useParams();
   const { idProfile } = params;
   const jsonTweets = jsonDatas.tweets;
-  console.log("jsonTweets : ", jsonTweets);
-  const profile = jsonTweets.find((element) => element.id === idProfile);
-  console.log("profile : ", profile);
+  const profile = jsonTweets.find(
+    (element) => element.identifiant === idProfile
+  );
   return (
     <div>
-      <h1>coucou</h1>
-      {/* <h1>{profile.tweetAuthor}</h1>
+      <h1>{profile.tweetAuthor} </h1>
+      <h1>{profile.tweetAuthor}</h1>
       <p> 0 post </p>
       <TweetAvatar image={profile.avatar} />
-      <p>{profile.tweetText}</p> */}
+      <p>{profile.tweetText}</p>
     </div>
   );
 }

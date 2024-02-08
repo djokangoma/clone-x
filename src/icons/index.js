@@ -1,0 +1,9 @@
+export { default as Expore } from "./Explore.png";
+export { default as Bookmarks } from "./Bookmarks.png";
+export { default as Home } from "./Home.png";
+export { default as Profile } from "./Profile.png";
+export { default as Messages } from "./Messages.png";
+export { default as Lists } from "./Lists.png";
+export { default as More } from "./More.png";
+export { default as Notifications } from "./Notifications.png";
+export { default as Twitter } from "./Twitter.png";
