@@ -23,6 +23,7 @@ export default function Tweet({
           />
         </Link>
       </div>
+
       <div className="tweet-content flex flex-col items-start justify-start gap-30 w-full">
         <div className="tweet-body flex flex-col gap-0.5">
           <div className="tweet-title flex items-start justify-start gap-10 text-base">

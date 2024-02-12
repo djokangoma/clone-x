@@ -2,6 +2,8 @@ import React from "react";
 import SidebarNav from "./sidebarnav";
 import Avatar from "./avatar";
 import ButtonTwitter from "./button-tweet";
+import Private from "../icons/Private.png";
+import More from "../icons/More-2.png";
 
 function Sidebar() {
   return (
@@ -17,13 +19,13 @@ function Sidebar() {
           <div>
             <p className="private-profile">
               Bradley Ortiz
-              <img src="src/icons/Private.png" alt="icon-private" />
+              <img src={Private} alt="icon-private" />
             </p>
           </div>
           <p className="name-bradley">@Bradley..</p>
         </div>
 
-        <img src="src/icons/More-2.png" alt="icon-More-2" />
+        <img src={More} alt="icon-More-2" />
       </div>
     </div>
   );

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import tweetData from "../models/tweetData";
 import Tweet from "./tweet";
 import initialData from "../data/initialData.json";
+import { tweetContext } from "../context/user-context";
 
-export default function Tweets() {
-  console.log("DATA :" + JSON.stringify(tweetData));
+export default function Tweets({ children }) {
+  const tweet = useContext(tweetContext);
+  // console.log("DATA :" + JSON.stringify(tweetData));
 
   return (
     <div className="tweets">

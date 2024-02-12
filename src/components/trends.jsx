@@ -3,6 +3,11 @@ import TrendSquid from "./trend-squid";
 import ShowMore from "./show-more";
 import TweetSitle from "./tweet-title";
 import TweetAvatar from "./tweet-avatar";
+import Settings from "../icons/Settings.png";
+import AvatarNewyork from "../images/image-1.png";
+import AvatarCNN from "../icons/Tweet-Profile-Photo.png";
+import AvatarTwitter from "../icons/image 1.png";
+import More2 from "../icons/More-2.png";
 
 function Trends() {
   return (
@@ -15,7 +20,7 @@ function Trends() {
 
       <div className="trendForYou">
         <h5 className="trend-setting">
-          Trends for you <img src="src/icons/Settings.png" alt="icon-setting" />
+          Trends for you <img src={Settings} alt="icon-setting" />
         </h5>
         <TrendSquid />
         <TrendSquid />
@@ -28,7 +33,7 @@ function Trends() {
         <h3>who to Follow</h3>
 
         <div className="parent-tweetTitle">
-          <TweetAvatar image="src/images/image-1.png" />
+          <TweetAvatar image={AvatarNewyork} />
           <TweetSitle
             texte1={"The New York Times"}
             texte2={"@nytimes 2h"}
@@ -37,12 +42,12 @@ function Trends() {
         </div>
 
         <div className="parent-tweetTitle">
-          <TweetAvatar image="src/icons/Tweet-Profile-Photo.png" />
+          <TweetAvatar image={AvatarCNN} />
           <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
         </div>
 
         <div className="parent-tweetTitle">
-          <TweetAvatar image="src/icons/image 1.png" />
+          <TweetAvatar image={AvatarTwitter} />
           <TweetSitle
             texte1={"Twitter"}
             texte2={"@ Twitter"}
@@ -56,11 +61,7 @@ function Trends() {
         <p>terms of service Privacy Police cookie police</p>
         <p>
           imprint Ads info More{" "}
-          <img
-            src="src/icons/More-2.png"
-            alt="icon-More2"
-            className="last-image"
-          />
+          <img src={More2} alt="icon-More2" className="last-image" />
           2021 twitter,inc
         </p>
       </div>

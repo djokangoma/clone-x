@@ -7,13 +7,22 @@ import Share from "../icons/Share.png";
 // import data from "../data/initialData.json";
 
 export default function TweetActions() {
-  //   const [like, setLike] = useState(data);
+  // const [like, setLike] = useState(0);
 
+  // const handleLike = () => {
+  //   console.Console(handleLike);
+  //   setLike((like = like + 1));
+  // };
   return (
     <div className="tweet-actions flex justify-center items-center gap-5 text-gray-700 text-base">
       <TweetAction icon={Message} value="0" customClassName="messageIcon" />
       <TweetAction icon={Retweet} value="10" customClassName="retweetIcon" />
-      <TweetAction icon={Jaime} value="0" customClassName="jaimeIcon" />
+      <TweetAction
+        icon={Jaime}
+        value="0"
+        customClassName="jaimeIcon"
+        // onClick={handleLike}
+      />
       <TweetAction icon={Share} customClassName="sharetIcon" />
     </div>
   );
