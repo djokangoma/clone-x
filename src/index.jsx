@@ -14,11 +14,19 @@ import Lists from "./pages/lists";
 import Profile from "./pages/profile";
 import More from "./pages/more";
 import OthersProfile from "./pages/otherProfile";
+import { TweetContext } from "./context/user-context";
+import dataJson from "./data/initialData.json";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <TweetContext.Provider
+        value={{ islogged: true, tweets: dataJson.tweets }}
+      >
+        <Layout />,
+      </TweetContext.Provider>
+    ),
     errorElement: <ErrorPage />,
     children: [
       {
