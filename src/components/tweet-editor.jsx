@@ -7,18 +7,13 @@ import { Link } from "react-router-dom";
 function TweetEditor() {
   const [tweet, setTweet] = useState();
 
-  const handleTweet = () => {
-    console.log("handeleTweet");
-    // setInput();
-  };
-
   return (
     <div className="tweet-editor">
       <Link to="/profile">
         <Avatar />
       </Link>
 
-      <div className="tweet-editor-form">
+      <form className="tweet-editor-form">
         <input className="tweet-editor-input" placeholder="what's happening?" />
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
@@ -28,13 +23,9 @@ function TweetEditor() {
             <img src="src/icons/Group.png" />
             <img src="src/icons/Schedule.png" />
           </div>
-          <ButtonTwitter
-            onClick={"handeleTweet"}
-            button="button"
-            Tweet={"Tweet"}
-          />
+          <ButtonTwitter button="button" Tweet={"Tweet"} />
         </div>
-      </div>
+      </form>
     </div>
   );
 }
