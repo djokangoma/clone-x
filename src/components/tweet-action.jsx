@@ -5,7 +5,7 @@ export default function TweetAction({ icon, value, customClassName }) {
     <div className="tweet-action flex items-center justify-center gap-4">
       <div className={customClassName}>
         <img src={icon} alt="iconAction" />
-        <p> {value} </p>
+        <button>{value} </button>
       </div>
     </div>
   );
