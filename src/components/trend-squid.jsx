@@ -8,7 +8,7 @@ export default function TrendSquid() {
         tranding in Turkey{" "}
         <img src={More2} alt="icon-More-2 " className="img10" />
       </p>
-      <h5>#SQUIDS</h5>
+      <h5 class="md: font-bold">#SQUIDS</h5>
       <p>2,066 Tweets</p>
     </div>
   );

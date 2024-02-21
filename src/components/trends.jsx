@@ -8,6 +8,7 @@ import AvatarNewyork from "../images/image-1.png";
 import AvatarCNN from "../icons/Tweet-Profile-Photo.png";
 import AvatarTwitter from "../icons/image 1.png";
 import More2 from "../icons/More-2.png";
+import ButtonTwitter from "./button-tweet";
 
 function Trends() {
   return (
@@ -30,29 +31,37 @@ function Trends() {
       </div>
 
       <div className="whoToFollow">
-        <h3>who to Follow</h3>
-
-        <div class="pt-4 flex items-center pr-4 ">
-          <TweetAvatar image={AvatarNewyork} />
-          <TweetSitle
-            texte1={"The New York Times"}
-            texte2={"@nytimes 2h"}
-            image2={"verified"}
-          />
+        <h3 class="md:font-bold">who to Follow</h3>
+        <div class=" flex justify-between flex-row mt-2 mb-2">
+          <div class="flex items-center">
+            <TweetAvatar image={AvatarNewyork} />
+            <TweetSitle
+              texte1={"The New York Times"}
+              texte2={"@nytimes 2h"}
+              image2={"verified"}
+            />
+          </div>
+          <ButtonTwitter button="buttonFollow" Tweet="Follow" />
         </div>
 
-        <div className="parent-tweetTitle" class="pl-3  flex items-center">
-          <TweetAvatar image={AvatarCNN} />
-          <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
+        <div class=" flex justify-between flex-row mt-2 mb-2">
+          <div class="flex items-center ">
+            <TweetAvatar image={AvatarCNN} />
+            <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
+          </div>
+          <ButtonTwitter button="buttonFollow" Tweet="Follow" />
         </div>
 
-        <div className="parent-tweetTitle" class="pl-3  flex items-center">
-          <TweetAvatar image={AvatarTwitter} />
-          <TweetSitle
-            texte1={"Twitter"}
-            texte2={"@ Twitter"}
-            image2={"verified"}
-          />
+        <div class="flex justify-between flex-row mt-2 mb-2">
+          <div class="flex items-center ">
+            <TweetAvatar image={AvatarTwitter} />
+            <TweetSitle
+              texte1={"Twitter"}
+              texte2={"@ Twitter"}
+              image2={"verified"}
+            />
+          </div>
+          <ButtonTwitter button="buttonFollow" Tweet="Follow" />
         </div>
 
         <ShowMore />

@@ -275,6 +275,7 @@ body {
   padding-right: 15px;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .icon-navlink {
@@ -325,6 +326,7 @@ ul li a {
 }
 .private-profile {
   display: flex;
+  font-weight: bold;
 }
 .name-bradley {
   opacity: 0.5;
@@ -369,6 +371,7 @@ ul li a {
   align-items: center;
   gap: 14vw;
   height: 48px;
+  font-weight: bold;
 }
 
 .trendsquid {
@@ -387,6 +390,7 @@ ul li a {
 
 .show-more {
   color: #1d9bf0;
+  font-weight: 700;
   width: 350px;
   height: 50px;
 }
@@ -407,25 +411,17 @@ ul li a {
   flex-direction: column;
   padding-left: 15px;
 }
-
-.box-tweetTitle {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 350px;
-  height: 72px;
+.buttonFollow {
+  text-transform: capitalize;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  margin-right: 10px;
 }
-/* .parent-tweetTitle {
-  display: flex;
-  align-items: center;
-} */
-/* .children-tweetTitle {
-  display: flex;
-  flex-direction: column;
-} */
-/* .parag {
-  opacity: 0.5;
-} */
+
 .box-paragraphe {
   width: 350px;
   height: 40px;
