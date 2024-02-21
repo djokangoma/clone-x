@@ -32,7 +32,7 @@ function Trends() {
       <div className="whoToFollow">
         <h3>who to Follow</h3>
 
-        <div className="parent-tweetTitle">
+        <div class="pt-4 flex items-center pr-4 ">
           <TweetAvatar image={AvatarNewyork} />
           <TweetSitle
             texte1={"The New York Times"}
@@ -41,12 +41,12 @@ function Trends() {
           />
         </div>
 
-        <div className="parent-tweetTitle">
+        <div className="parent-tweetTitle" class="pl-3  flex items-center">
           <TweetAvatar image={AvatarCNN} />
           <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
         </div>
 
-        <div className="parent-tweetTitle">
+        <div className="parent-tweetTitle" class="pl-3  flex items-center">
           <TweetAvatar image={AvatarTwitter} />
           <TweetSitle
             texte1={"Twitter"}

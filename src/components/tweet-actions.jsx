@@ -48,7 +48,7 @@ export default function TweetActions() {
       <TweetAction icon={Message} value="0" customClassName="messageIcon" />
       <TweetAction icon={Retweet} value="10" customClassName="retweetIcon" />
       <TweetAction icon={Jaime} value="0" customClassName="jaimeIcon" />
-      <TweetAction icon={Share} customClassName="sharetIcon" />
+      <TweetAction icon={Share} value="" customClassName="sharetIcon" />
     </div>
   );
 }

@@ -352,6 +352,7 @@ ul li a {
 
 .trendForYou {
   margin-top: 1.2vh;
+  margin-bottom: 15px;
   width: 350px;
   height: 426px;
   border: 1px solid transparent;
@@ -397,12 +398,14 @@ ul li a {
 }
 
 .whoToFollow {
-  margin-top: 1.2vh;
+  background-color: rgb(32, 35, 39);
   width: 350px;
-  height: 314px;
+  height: 250px;
   border: 1px solid transparent;
   border-radius: 15px;
-  background-color: rgb(32, 35, 39);
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
 }
 
 .box-tweetTitle {
@@ -412,17 +415,17 @@ ul li a {
   width: 350px;
   height: 72px;
 }
-.parent-tweetTitle {
+/* .parent-tweetTitle {
   display: flex;
   align-items: center;
-}
-.children-tweetTitle {
+} */
+/* .children-tweetTitle {
   display: flex;
   flex-direction: column;
-}
-.parag {
+} */
+/* .parag {
   opacity: 0.5;
-}
+} */
 .box-paragraphe {
   width: 350px;
   height: 40px;
