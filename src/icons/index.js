@@ -7,3 +7,4 @@ export { default as Lists } from "./Lists.png";
 export { default as More } from "./More.png";
 export { default as Notifications } from "./Notifications.png";
 export { default as Twitter } from "./Twitter.png";
+export { default as Search } from "./Search.png";

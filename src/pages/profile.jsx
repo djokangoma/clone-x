@@ -8,7 +8,7 @@ function Profile() {
       <h1>Bradley Ortiz</h1>
       <p> 0 post </p>
       <div className="userProfileAvatar">
-        <Avatar image={"pagePofileUser"} />
+        <Avatar image={"avatarPofileUser"} />
       </div>
       <div className="profileNameUser">
         <h1>Bradley Ortiz</h1>

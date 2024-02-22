@@ -336,20 +336,26 @@ ul li a {
   text-transform: capitalize;
   width: 350px;
   height: 42px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border: none;
   border-radius: 42px;
   background-color: rgb(32, 35, 39);
   color: white;
   font-size: 1rem;
+  padding-left: 60px;
 }
 
 .trends {
   width: 360px;
   height: 1080px;
   margin: 1rem 2rem;
+}
+.box-input-search {
+  position: relative;
+}
+.iconSearch {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .trendForYou {
@@ -446,7 +452,7 @@ ul li a {
   height: 300px;
   position: relative;
 }
-.pagePofileUser {
+.PofileUser {
   width: 180px;
   position: absolute;
   margin-top: 200px;
