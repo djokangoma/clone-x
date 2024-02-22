@@ -1,22 +1,22 @@
 import React from "react";
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import jsonDatas from "../data/initialData.json";
 import TweetAvatar from "../components/tweet-avatar";
 import ButtonTwitter from "../components/button-tweet";
+import { TweetContext } from "../context/user-context";
 
 export default function OthersProfile() {
-  const { identifiant } = useParams();
-  const jsonTweets = jsonDatas.tweets;
+  const { slug } = useParams();
+  const jsonTweets = useContext(TweetContext);
   console.log("jsonTweets: ", jsonTweets);
-  const profile = jsonTweets.find((element) => element.identifiant === id);
+  const profile = jsonTweets.tweets.find((element) => element.slug === slug);
 
-  console.log("id :", identifiant);
+  console.log("id :", profile);
   return (
     <div className="userProfile">
-      <h1>bounjour</h1>
-      <p> 0 post </p>
       <div className="userProfileAvatar">
-        <TweetAvatar image={profile} />
+        <TweetAvatar image={profile.avatar} />
       </div>
       <div className="profileNameUser">
         <h1>{profile.tweetAuthor} </h1>

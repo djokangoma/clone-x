@@ -16,7 +16,7 @@ import More from "./pages/more";
 import OthersProfile from "./pages/otherProfile";
 import { TweetContext } from "./context/user-context";
 import dataJson from "./data/initialData.json";
-
+console.log("dataJson", dataJson);
 const router = createBrowserRouter([
   {
     path: "/",
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/profile/:id",
+        path: ":slug",
         element: <OthersProfile />,
       },
       {
