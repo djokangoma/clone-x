@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import ErrorPage from "./pages/page-error";
 import "./style/App.css";
@@ -15,19 +15,10 @@ import Profile from "./pages/profile";
 import More from "./pages/more";
 import OthersProfile from "./pages/otherProfile";
 
-import { TweetContext } from "./context/user-context";
-import dataJson from "./data/initialData.json";
-
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <TweetContext.Provider
-        value={{ islogged: true, tweets: dataJson.tweets }}
-      >
-        <Layout />,
-      </TweetContext.Provider>
-    ),
+    element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
       {
