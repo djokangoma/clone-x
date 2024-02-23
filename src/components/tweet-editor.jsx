@@ -91,7 +91,7 @@ function TweetEditor() {
     console.log("newTweet :", newTweet);
     setTweet(newTweet);
 
-    alert("mon coeur");
+    alert("mon ");
   };
 
   const handleChange = (Event) => {

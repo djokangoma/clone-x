@@ -36,9 +36,9 @@ function Trends() {
         </div>
 
         <div className="whoToFollow">
-          <h3 class="md:font-bold">who to Follow</h3>
-          <div class=" flex justify-between flex-row mt-2 mb-2">
-            <div class="flex items-center">
+          <h3 className="md:font-bold">who to Follow</h3>
+          <div className=" flex justify-between flex-row mt-2 mb-2">
+            <div className="flex items-center">
               <TweetAvatar image={AvatarNewyork} />
               <TweetSitle
                 texte1={"The New York Times"}
@@ -49,16 +49,16 @@ function Trends() {
             <ButtonTwitter button="buttonFollow" Tweet="Follow" />
           </div>
 
-          <div class=" flex justify-between flex-row mt-2 mb-2">
-            <div class="flex items-center ">
+          <div className=" flex justify-between flex-row mt-2 mb-2">
+            <div className="flex items-center ">
               <TweetAvatar image={AvatarCNN} />
               <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
             </div>
             <ButtonTwitter button="buttonFollow" Tweet="Follow" />
           </div>
 
-          <div class="flex justify-between flex-row mt-2 mb-2">
-            <div class="flex items-center ">
+          <div className="flex justify-between flex-row mt-2 mb-2">
+            <div className="flex items-center ">
               <TweetAvatar image={AvatarTwitter} />
               <TweetSitle
                 texte1={"Twitter"}
