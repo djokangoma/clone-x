@@ -11,11 +11,12 @@ export default function Tweet({
   time,
   tweetAuthor,
   tweetImage,
+  slug
 }) {
   return (
     <div className="tweet flex justify-start items-start gap-5 py-1.5 px-1 border-b border-gray-700">
       <div className="tweet-avatar ">
-        <Link to={`/profile/${identifiant}`}>
+        <Link to={`/${slug}`}>
           <img
             src={avatarImage}
             alt="image"
@@ -27,9 +28,9 @@ export default function Tweet({
       <div className="tweet-content flex flex-col items-start justify-start gap-30 w-full">
         <div className="tweet-body flex flex-col gap-0.5">
           <div className="tweet-title flex items-start justify-start gap-10 text-base">
-            <div class="md:font-bold">
+            <div className="md:font-bold">
               {" "}
-              <Link to={`/profile/${identifiant}`}>{tweetAuthor}</Link>
+              <Link to={`/${slug}`}>{tweetAuthor}</Link>
             </div>
             <img src={image} className="Verified" />
             <div className="tweet-title-details text-gray-600">

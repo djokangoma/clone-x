@@ -13,40 +13,54 @@ import { Search } from "../icons/index";
 
 function Trends() {
   return (
-    <div>
-      <div className="trends">
-        <div className="box-input-search">
-          <img src={Search} alt="iconSearch" className="iconSearch" />
-          <input
-            type="text"
-            placeholder="serach Twitter"
-            className="btn-searchTwitter"
-          />
+    <div className="trends">
+      <input
+        type="text"
+        placeholder=" search twitter"
+        className="btn-searchTwitter"
+      />
+
+      <div className="trendForYou">
+        <h5 className="trend-setting">
+          Trends for you <img src={Settings} alt="icon-setting" />
+        </h5>
+        <TrendSquid />
+        <TrendSquid />
+        <TrendSquid />
+        <TrendSquid />
+        <ShowMore />
+      </div>
+
+      <div className="whoToFollow">
+        <h3 className="md:font-bold">who to Follow</h3>
+        <div className=" flex justify-between flex-row mt-2 mb-2">
+          <div className="flex items-center">
+            <TweetAvatar image={AvatarNewyork} />
+            <TweetSitle
+              texte1={"The New York Times"}
+              texte2={"@nytimes 2h"}
+              image2={"verified"}
+            />
+          </div>
+          <ButtonTwitter button="buttonFollow" Tweet="Follow" />
         </div>
 
-        <div className="trendForYou">
-          <h5 className="trend-setting">
-            Trends for you <img src={Settings} alt="icon-setting" />
-          </h5>
-          <TrendSquid />
-          <TrendSquid />
-          <TrendSquid />
-          <TrendSquid />
-          <ShowMore />
+        <div className=" flex justify-between flex-row mt-2 mb-2">
+          <div className="flex items-center ">
+            <TweetAvatar image={AvatarCNN} />
+            <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
+          </div>
+          <ButtonTwitter button="buttonFollow" Tweet="Follow" />
         </div>
 
-        <div className="whoToFollow">
-          <h3 className="md:font-bold">who to Follow</h3>
-          <div className=" flex justify-between flex-row mt-2 mb-2">
-            <div className="flex items-center">
-              <TweetAvatar image={AvatarNewyork} />
-              <TweetSitle
-                texte1={"The New York Times"}
-                texte2={"@nytimes 2h"}
-                image2={"verified"}
-              />
-            </div>
-            <ButtonTwitter button="buttonFollow" Tweet="Follow" />
+        <div className="flex justify-between flex-row mt-2 mb-2">
+          <div className="flex items-center ">
+            <TweetAvatar image={AvatarTwitter} />
+            <TweetSitle
+              texte1={"Twitter"}
+              texte2={"@ Twitter"}
+              image2={"verified"}
+            />
           </div>
 
           <div className=" flex justify-between flex-row mt-2 mb-2">

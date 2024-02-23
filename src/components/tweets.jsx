@@ -27,6 +27,7 @@ export default function Tweets() {
           time={item.tweetTime}
           text={item.tweetText}
           tweetImage={item.tweetImage}
+          slug={item.slug}
         />
       ))}
     </div>
