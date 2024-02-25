@@ -4,37 +4,40 @@ import { useState } from "react";
 import ButtonTwitter from "./button-tweet";
 import { Link } from "react-router-dom";
 import data from "../data/initialData.json";
+import { useForm } from "react-hook-form";
 
 function TweetEditor() {
   const copyarray = [...data.tweets];
   const [tweetUser, setTweetUser] = useState("copyarray");
-  const [input, SetInput] = useState("");
 
-  // const tableau = [...tweetUser];
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ defaultValues: tweetUser });
 
-  // const objet = {
-  //   author: "ton auteur",
-  //   tweetText: "valeur de ton input",
-  // };
-
-  // tableau.push(objet);
-
-  // setTweetUser(tableau);
-
-  const handleSubmit = (Event) => {
+  const onSubmit = (data) => {
     Event.preventDefault();
-    const copyTweet = [...tweet];
-    const tweetAdd = { tweet };
-    const newTweet = tweetAdd.push(copyTweet);
-    console.log("newTweet :", newTweet);
-    setTweet(newTweet);
+    const ownUser = [...tweetUser];
+    const userCharacteristic = {
+      avatar: "./public/icons/profile-photo.png",
+      tweetAuthor: "joe kangoma",
+      tweetVeried: "/public/icons/verified.png",
+      tweetDetail: "@joe.. ",
+      slug: "joe",
 
-    alert("mon ");
-  };
+      tweetTime: "1m",
+      tweetText: "",
+      tweetImage: null,
+      tweetJaime: "Jaime",
+      tweetMessage: "Message",
+      tweetRetweet: "Retweet",
+      tweetShare: "Share",
+    };
 
-  const handleChange = (Event) => {
-    const newId = Event.target.value;
-    console.log("newId :", newId);
+    ownUser.push(userCharacteristic);
+
+    setTweetUser(ownUser);
   };
 
   return (
@@ -43,12 +46,30 @@ function TweetEditor() {
         <Avatar />
       </Link>
 
-      <form className="tweet-editor-form" onSubmit={handleSubmit}>
-        <input
-          className="tweet-editor-input"
-          placeholder="what's happening?"
-          onChange={handleChange}
-        />
+      <form className="tweet-editor-form" onSubmit={handleSubmit(onSubmit)}>
+        <div>
+          <input
+            className="tweet-editor-input"
+            placeholder="what's happening?"
+            name="name"
+            {...register("name", {
+              required: "ce champ est obligatoire",
+              minLength: {
+                value: 1,
+                message: "le texte doit contenir au moins un caractere",
+              },
+              maxLength: {
+                value: 180,
+                message:
+                  "le texte ne doit pas contenir plus de  120 caracteres",
+              },
+            })}
+          />
+          {errors.name && (
+            <span style={{ color: "red" }}>{errors.namemessage}</span>
+          )}
+        </div>
+
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
             <img src="src/icons/Vector.png" />

@@ -62,29 +62,11 @@ function Trends() {
               image2={"verified"}
             />
           </div>
-
-          <div className=" flex justify-between flex-row mt-2 mb-2">
-            <div className="flex items-center ">
-              <TweetAvatar image={AvatarCNN} />
-              <TweetSitle texte1={"CNN"} texte2={"@ CNN"} image2={"verified"} />
-            </div>
-            <ButtonTwitter button="buttonFollow" Tweet="Follow" />
-          </div>
-
-          <div className="flex justify-between flex-row mt-2 mb-2">
-            <div className="flex items-center ">
-              <TweetAvatar image={AvatarTwitter} />
-              <TweetSitle
-                texte1={"Twitter"}
-                texte2={"@ Twitter"}
-                image2={"verified"}
-              />
-            </div>
-            <ButtonTwitter button="buttonFollow" Tweet="Follow" />
-          </div>
-
-          <ShowMore />
+          <ButtonTwitter button="buttonFollow" Tweet="Follow" />
         </div>
+
+        <ShowMore />
+
         <div className="box-paragraphe">
           <p>terms of service Privacy Police cookie police</p>
           <p>

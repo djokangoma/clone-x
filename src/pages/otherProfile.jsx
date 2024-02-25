@@ -1,5 +1,4 @@
 import React from "react";
-import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import jsonDatas from "../data/initialData.json";
 import TweetAvatar from "../components/tweet-avatar";
@@ -17,7 +16,7 @@ export default function OthersProfile() {
       <h1>{profile.tweetAuthor}</h1>
       <p> 0 post </p>
       <div className="userProfileAvatar">
-        <TweetAvatar image={profile.avatar} />
+        <TweetAvatar image={profile.avatar} details="avatarPofileUser" />
       </div>
       <div className="profileNameUser">
         <h1>{profile.tweetAuthor} </h1>

@@ -431,6 +431,7 @@ ul li a {
 .box-paragraphe {
   width: 350px;
   height: 40px;
+  margin-top: 20px;
 }
 .last-image {
   margin-right: 10px;
@@ -452,7 +453,7 @@ ul li a {
   height: 300px;
   position: relative;
 }
-.PofileUser {
+.avatarPofileUser {
   width: 180px;
   position: absolute;
   margin-top: 200px;

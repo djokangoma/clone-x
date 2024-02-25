@@ -11,7 +11,7 @@ export default function Tweet({
   time,
   tweetAuthor,
   tweetImage,
-  slug
+  slug,
 }) {
   return (
     <div className="tweet flex justify-start items-start gap-5 py-1.5 px-1 border-b border-gray-700">
@@ -20,7 +20,7 @@ export default function Tweet({
           <img
             src={avatarImage}
             alt="image"
-            className="w-full h-16 rounded-full"
+            className="w-full h-20 rounded-full"
           />
         </Link>
       </div>

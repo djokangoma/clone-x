@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function TweetAvatar({ image }) {
+export default function TweetAvatar({ image, details }) {
   return (
     <div className="tweet-avatar">
-      <img src={image} alt="image" />
+      <img src={image} className={details} alt="image" />
     </div>
   );
 }
