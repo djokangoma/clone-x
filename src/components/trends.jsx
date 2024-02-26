@@ -14,9 +14,12 @@ import { Search } from "../icons/index";
 function Trends() {
   return (
     <div className="trends">
+      <div className="absolute pl-4 pt-2">
+        <img src={Search} alt="Search" className="search" />
+      </div>
       <input
         type="text"
-        placeholder=" search twitter"
+        placeholder=" search twitter "
         className="btn-searchTwitter"
       />
 

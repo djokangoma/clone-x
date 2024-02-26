@@ -3,21 +3,29 @@ import Avatar from "./avatar";
 import { useState } from "react";
 import ButtonTwitter from "./button-tweet";
 import { Link } from "react-router-dom";
-import data from "../data/initialData.json";
 import { useForm } from "react-hook-form";
+import { TweetContext } from "../context/user-context";
+import { useContext } from "react";
 
 function TweetEditor() {
-  const copyarray = [...data.tweets];
-  const [tweetUser, setTweetUser] = useState("copyarray");
+  const context = useContext(TweetContext);
+
+  const { tweetUser, setTweetUser } = context.tweets;
+
+  const [formData, setFormDate] = useState({
+    tweetInput: "",
+  });
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({ defaultValues: tweetUser });
+  } = useForm({ defaultValues: formData });
 
-  const onSubmit = (data) => {
-    Event.preventDefault();
+  const onSubmit = (data, e) => {
+    e.preventDefault();
+
+    console.log(data);
     const ownUser = [...tweetUser];
     const userCharacteristic = {
       avatar: "./public/icons/profile-photo.png",
@@ -27,7 +35,7 @@ function TweetEditor() {
       slug: "joe",
 
       tweetTime: "1m",
-      tweetText: "",
+      tweetText: `${data.tweetInput}`,
       tweetImage: null,
       tweetJaime: "Jaime",
       tweetMessage: "Message",
@@ -35,7 +43,7 @@ function TweetEditor() {
       tweetShare: "Share",
     };
 
-    ownUser.push(userCharacteristic);
+    ownUser.unshift(userCharacteristic);
 
     setTweetUser(ownUser);
   };
@@ -51,8 +59,8 @@ function TweetEditor() {
           <input
             className="tweet-editor-input"
             placeholder="what's happening?"
-            name="name"
-            {...register("name", {
+            name="tweetInput"
+            {...register("tweetInput", {
               required: "ce champ est obligatoire",
               minLength: {
                 value: 1,

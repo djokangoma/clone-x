@@ -7,14 +7,14 @@ import { TweetContext } from "../context/user-context";
 
 export default function Tweets() {
   // console.log("DATA :" + JSON.stringify(tweetData));
-  // const tweetPro = useContext(TweetContext);
-  const copyarray = [...initialData.tweets];
-  const [tweetUser, setTweetUser] = useState("copyarray");
-  // const { tweetUser, setTweetUser } = tweetPro.tweets;
+  const tweetPro = useContext(TweetContext);
+  // const copyarray = [...initialData.tweets];
+  // const [tweetUser, setTweetUser] = useState("copyarray");
+  const { tweetUser, setTweetUser } = tweetPro.tweets;
 
   return (
     <div className="tweets">
-      {copyarray.map((item) => (
+      {tweetUser.map((item) => (
         <Tweet
           key={item.id}
           identifiant={item.id}

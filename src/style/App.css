@@ -437,7 +437,7 @@ ul li a {
   margin-right: 10px;
 }
 .userProfile {
-  background-color: white;
+  background-color: rgba(240, 233, 233, 0.682);
   color: black;
 }
 .userProfile h1 {
