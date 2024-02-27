@@ -34,7 +34,7 @@ function TweetEditor() {
       tweetDetail: "@joe.. ",
       slug: "joe",
 
-      tweetTime: "1m",
+      tweetTime: "à l'instantq",
       tweetText: `${data.tweetInput}`,
       tweetImage: null,
       tweetJaime: "Jaime",
@@ -73,8 +73,8 @@ function TweetEditor() {
               },
             })}
           />
-          {errors.name && (
-            <span style={{ color: "red" }}>{errors.namemessage}</span>
+          {errors.tweetInput && (
+            <span style={{ color: "red" }}>{errors.tweetInput.message}</span>
           )}
         </div>
 
