@@ -9,6 +9,7 @@ import {
   More,
   Notifications,
   Twitter,
+  Notif,
 } from "../icons/index";
 
 export default function SidebarNav() {
@@ -35,6 +36,9 @@ export default function SidebarNav() {
           <img src={Notifications} alt="icon-notification" />
           Notifications
         </NavLink>
+        <div>
+          <img src={Notif} alt="Notifi" className="icon-notificationBlue" />
+        </div>
       </li>
 
       <li className="navlink">

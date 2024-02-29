@@ -8,3 +8,4 @@ export { default as More } from "./More.png";
 export { default as Notifications } from "./Notifications.png";
 export { default as Twitter } from "./Twitter.png";
 export { default as Search } from "./Search.png";
+export { default as Notif } from "./Notif.png";

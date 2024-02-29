@@ -34,7 +34,7 @@ function TweetEditor() {
       tweetDetail: "@joe.. ",
       slug: "joe",
 
-      tweetTime: "à l'instantq",
+      tweetTime: "à l'instant",
       tweetText: `${data.tweetInput}`,
       tweetImage: null,
       tweetJaime: "Jaime",
@@ -69,7 +69,7 @@ function TweetEditor() {
               maxLength: {
                 value: 180,
                 message:
-                  "le texte ne doit pas contenir plus de  120 caracteres",
+                  "le texte ne doit pas contenir plus de  180 caracteres",
               },
             })}
           />

@@ -284,6 +284,15 @@ body {
   gap: 1vw;
 }
 
+.icon-notification {
+  position: relative;
+}
+.icon-notificationBlue {
+  position: absolute;
+  margin-left: -190px;
+  margin-top: -20px;
+}
+
 ul {
   display: flex;
   flex-direction: column;

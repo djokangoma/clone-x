@@ -1,5 +1,5 @@
 import React from "react";
-import TweetActions from "./tweet-actions";
+// import TweetActions from "./tweet-actions";
 import { Link } from "react-router-dom";
 
 export default function Tweet({
@@ -12,6 +12,10 @@ export default function Tweet({
   tweetAuthor,
   tweetImage,
   slug,
+  tweetJaime,
+  tweetMessage,
+  tweetRetweet,
+  tweetShare,
 }) {
   return (
     <div className="tweet flex justify-start items-start gap-5 py-1.5 px-1 border-b border-gray-700">
@@ -41,9 +45,11 @@ export default function Tweet({
               </p>
             </div>
           </div>
+
           <div className="tweet-text text-gray-400 text-base">
             <p>{text}</p>
           </div>
+
           <div className="tweet-image w-full px-3 pt-0 pb-0">
             {tweetImage ? (
               <>
@@ -57,7 +63,27 @@ export default function Tweet({
               <></>
             )}
           </div>
-          <TweetActions />{" "}
+
+          <div className="flex  items-center gap-14">
+            <div className=" flex flex-row gap-4">
+              <img src={tweetJaime} alt="image" />
+              <p>10</p>
+            </div>
+            <div className=" flex flex-row gap-4">
+              <img src={tweetMessage} alt="image" />
+              <p>10</p>
+            </div>
+            <div className=" flex flex-row gap-4">
+              <img src={tweetRetweet} alt="image" />
+              <p>10</p>
+            </div>
+            <div className=" flex flex-row gap-4">
+              <img src={tweetShare} alt="image" />
+              <p>10</p>
+            </div>
+          </div>
+
+          {/* <TweetActions /> */}
         </div>
       </div>
     </div>

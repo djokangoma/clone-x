@@ -8,8 +8,6 @@ import { TweetContext } from "../context/user-context";
 export default function Tweets() {
   // console.log("DATA :" + JSON.stringify(tweetData));
   const tweetPro = useContext(TweetContext);
-  // const copyarray = [...initialData.tweets];
-  // const [tweetUser, setTweetUser] = useState("copyarray");
   const { tweetUser, setTweetUser } = tweetPro.tweets;
 
   return (
@@ -26,6 +24,10 @@ export default function Tweets() {
           text={item.tweetText}
           tweetImage={item.tweetImage}
           slug={item.slug}
+          tweetJaime={item.tweetJaime}
+          tweetMessage={item.tweetMessage}
+          tweetRetweet={item.tweetRetweet}
+          tweetShare={item.tweetShare}
         />
       ))}
     </div>
