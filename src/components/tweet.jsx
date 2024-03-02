@@ -1,6 +1,6 @@
 import React from "react";
-// import TweetActions from "./tweet-actions";
 import { Link } from "react-router-dom";
+import TweetLikeButton from "./tweet-likebutton";
 
 export default function Tweet({
   identifiant,
@@ -64,26 +64,22 @@ export default function Tweet({
             )}
           </div>
 
-          <div className="flex  items-center gap-14">
+          <div className="flex  items-center gap-24">
             <div className=" flex flex-row gap-4">
-              <img src={tweetJaime} alt="image" />
-              <p>10</p>
+              <TweetLikeButton />
             </div>
-            <div className=" flex flex-row gap-4">
-              <img src={tweetMessage} alt="image" />
+            <div className=" flex flex-row gap-4  hover:bg-purple-600">
+              <img src={tweetMessage} alt="image" className=" hover:bg-red" />
               <p>10</p>
             </div>
             <div className=" flex flex-row gap-4">
               <img src={tweetRetweet} alt="image" />
-              <p>10</p>
+              <p>0</p>
             </div>
             <div className=" flex flex-row gap-4">
               <img src={tweetShare} alt="image" />
-              <p>10</p>
             </div>
           </div>
-
-          {/* <TweetActions /> */}
         </div>
       </div>
     </div>

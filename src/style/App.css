@@ -188,26 +188,18 @@ body {
   color: #2f3336;
 }
 
-.tweet-action {
+/* .tweet-action {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
+} */
 
-.messageIcon img,
-.retweetIcon img,
-.jaimeIcon img,
-.sharetIcon img {
-  padding: 5px;
-  margin-right: 2px;
-}
-
-.messageIcon {
+/* .messageIcon {
   display: flex;
   align-items: center;
   gap: 5px;
-}
+} */
 
 .messageIcon:hover img {
   background-color: #1d9bf0;

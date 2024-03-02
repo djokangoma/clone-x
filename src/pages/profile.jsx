@@ -1,8 +1,14 @@
 import React from "react";
 import Avatar from "../components/avatar";
 import ButtonTwitter from "../components/button-tweet";
+import { TweetContext } from "../context/user-context";
+import { useContext } from "react";
 
 function Profile() {
+  const context = useContext(TweetContext);
+  const { tweetUser, setTweetUser } = context.tweets;
+  const ownUser = [...tweetUser];
+
   return (
     <div className="userProfile">
       <h1>Bradley Ortiz</h1>

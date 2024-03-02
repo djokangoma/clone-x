@@ -18,7 +18,7 @@ export default function SidebarNav() {
       <img src={Twitter} alt="logo-twitter" className="navlink" width={75} />
 
       <li className="navlink">
-        <NavLink to="/home" className="icon-navlink">
+        <NavLink to="/" className="icon-navlink">
           <img src={Home} alt="icon-home" />
           Home
         </NavLink>

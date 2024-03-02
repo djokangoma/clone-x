@@ -7,8 +7,8 @@ import { TweetContext } from "../context/user-context";
 
 export default function Tweets() {
   // console.log("DATA :" + JSON.stringify(tweetData));
-  const tweetPro = useContext(TweetContext);
-  const { tweetUser, setTweetUser } = tweetPro.tweets;
+  const OwnTweet = useContext(TweetContext);
+  const { tweetUser, setTweetUser } = OwnTweet.tweets;
 
   return (
     <div className="tweets">

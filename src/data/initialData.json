@@ -26,10 +26,10 @@
       "tweetTime": "7m",
       "tweetText": "'President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a \"major breakthrough\" that would serve to both strengthen the US steel industry and combat the global climate crisis.'",
       "tweetImage": null,
-      "tweetJaime": "Jaime",
-      "tweetMessage": "Message",
-      "tweetRetweet": "Retweet",
-      "tweetShare": "Share"
+      "tweetJaime": "./public/icons/React.png",
+      "tweetMessage": "./public/icons/Reply.png",
+      "tweetRetweet": "./public/icons/Retweet.png",
+      "tweetShare": "./public/icons/Share.png"
     },
     {
       "id": "2",
@@ -56,10 +56,10 @@
       "tweetTime": "Oct 29",
       "tweetText": "BIG NEWS lol jk still Twitter",
       "tweetImage": null,
-      "tweetJaime": "Jaime",
-      "tweetMessage": "Message",
-      "tweetRetweet": "Retweet",
-      "tweetShare": "Share"
+      "tweetJaime": "./public/icons/React.png",
+      "tweetMessage": "./public/icons/Reply.png",
+      "tweetRetweet": "./public/icons/Retweet.png",
+      "tweetShare": "./public/icons/Share.png"
     },
     {
       "id": "4",
@@ -71,10 +71,10 @@
       "tweetTime": "Oct 29",
       "tweetText": "hello literally everyone",
       "tweetImage": null,
-      "tweetJaime": "Jaime",
-      "tweetMessage": "Message",
-      "tweetRetweet": "Retweet",
-      "tweetShare": "Share"
+      "tweetJaime": "./public/icons/React.png",
+      "tweetMessage": "./public/icons/Reply.png",
+      "tweetRetweet": "./public/icons/Retweet.png",
+      "tweetShare": "./public/icons/Share.png"
     },
     {
       "id": "5",
@@ -86,10 +86,10 @@
       "tweetTime": "Oct 4",
       "tweetText": "hello literally everyone",
       "tweetImage": null,
-      "tweetJaime": "Jaime",
-      "tweetMessage": "Message",
-      "tweetRetweet": "Retweet",
-      "tweetShare": "Share"
+      "tweetJaime": "./public/icons/React.png",
+      "tweetMessage": "./public/icons/Reply.png",
+      "tweetRetweet": "./public/icons/Retweet.png",
+      "tweetShare": "./public/icons/Share.png"
     }
   ]
 }

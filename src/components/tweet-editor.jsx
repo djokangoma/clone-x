@@ -37,10 +37,10 @@ function TweetEditor() {
       tweetTime: "à l'instant",
       tweetText: `${data.tweetInput}`,
       tweetImage: null,
-      tweetJaime: "Jaime",
-      tweetMessage: "Message",
-      tweetRetweet: "Retweet",
-      tweetShare: "Share",
+      tweetJaime: "./public/icons/React.png",
+      tweetMessage: "./public/icons/Reply.png",
+      tweetRetweet: "./public/icons/Retweet.png",
+      tweetShare: "./public/icons/Share.png",
     };
 
     ownUser.unshift(userCharacteristic);
