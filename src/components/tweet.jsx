@@ -66,11 +66,11 @@ export default function Tweet({
 
           <div className="flex  items-center gap-24">
             <div className=" flex flex-row gap-4">
-              <TweetLikeButton />
+              <TweetLikeButton className="hover:bg-purple-600" />
             </div>
             <div className=" flex flex-row gap-4  hover:bg-purple-600">
               <img src={tweetMessage} alt="image" className=" hover:bg-red" />
-              <p>10</p>
+              <button className="color:red">10</button>
             </div>
             <div className=" flex flex-row gap-4">
               <img src={tweetRetweet} alt="image" />

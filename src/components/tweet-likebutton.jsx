@@ -2,11 +2,14 @@ import { useState } from "react";
 
 export default function TweetLikeButton() {
   const [count, setCount] = useState(0);
-  const [imageColor, setImageColor] = useState("black");
+  const [isLiked, setIsLiked] = useState(false);
 
   const handleClick = () => {
-    setCount(count + 1);
-    setImageColor("red");
+    setCount(count + (isLiked ? -1 : 1));
+    setIsLiked(!isLiked);
+  };
+  const heartStyle = {
+    backgroundColor: isLiked ? "red" : "black",
   };
 
   return (
@@ -16,9 +19,10 @@ export default function TweetLikeButton() {
         onClick={handleClick}
       >
         <img
+          className="hover:bg-red"
           src="/icons/React.png"
           alt="image"
-          style={{ color: setImageColor }}
+          style={heartStyle}
         />
         {count}
       </button>
