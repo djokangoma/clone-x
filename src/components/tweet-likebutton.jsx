@@ -13,19 +13,17 @@ export default function TweetLikeButton() {
   };
 
   return (
-    <div>
-      <button
-        className="tweet-like-button-container flex flex-row gap-4"
-        onClick={handleClick}
-      >
-        <img
-          className="hover:bg-red"
-          src="/icons/React.png"
-          alt="image"
-          style={heartStyle}
-        />
-        {count}
-      </button>
-    </div>
+    <button
+      className=" flex flex-row gap-4 hover:text-red-500 "
+      onClick={handleClick}
+    >
+      <img
+        className=" hover:bg-gradient-to-r from-red-500 via-red-500 to-red-500 "
+        src="/icons/React.png"
+        alt="image"
+        style={heartStyle}
+      />
+      {count}
+    </button>
   );
 }

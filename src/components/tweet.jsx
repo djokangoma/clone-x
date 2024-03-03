@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TweetLikeButton from "./tweet-likebutton";
+import { useState } from "react";
 
 export default function Tweet({
   identifiant,
@@ -17,6 +18,17 @@ export default function Tweet({
   tweetRetweet,
   tweetShare,
 }) {
+  const [count, setCount] = useState(0);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const handleClick = () => {
+    setCount(count + (isLiked ? -1 : 1));
+    setIsLiked(!isLiked);
+  };
+  const heartStyle = {
+    backgroundColor: isLiked ? "red" : "black",
+  };
+
   return (
     <div className="tweet flex justify-start items-start gap-5 py-1.5 px-1 border-b border-gray-700">
       <div className="tweet-avatar ">
@@ -24,7 +36,7 @@ export default function Tweet({
           <img
             src={avatarImage}
             alt="image"
-            className="w-full h-20 rounded-full"
+            className="w-full h-16 rounded-full"
           />
         </Link>
       </div>
@@ -66,17 +78,30 @@ export default function Tweet({
 
           <div className="flex  items-center gap-24">
             <div className=" flex flex-row gap-4">
-              <TweetLikeButton className="hover:bg-purple-600" />
+              <TweetLikeButton />
             </div>
-            <div className=" flex flex-row gap-4  hover:bg-purple-600">
-              <img src={tweetMessage} alt="image" className=" hover:bg-red" />
-              <button className="color:red">10</button>
-            </div>
+
+            <button
+              onClick={handleClick}
+              className="flex flex-row gap-4 hover:text-green-500"
+            >
+              <img
+                className="hover:bg-gradient-to-r from-green-500 via-green-500 to-green-500"
+                src={tweetMessage}
+                alt="image"
+              />
+              {count}
+            </button>
+
             <div className=" flex flex-row gap-4">
-              <img src={tweetRetweet} alt="image" />
-              <p>0</p>
+              <img
+                className="hover:bg-gradient-to-r from-blue-500 via-blue-500 to-blue-500"
+                src={tweetRetweet}
+                alt="image"
+              />
+              <button className="hover:text-blue-500">0</button>
             </div>
-            <div className=" flex flex-row gap-4">
+            <div className="hover:bg-gradient-to-r from-blue-500 via-blue-500 to-blue-500 flex flex-row gap-4">
               <img src={tweetShare} alt="image" />
             </div>
           </div>

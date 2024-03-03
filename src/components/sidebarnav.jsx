@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Expore,
   Bookmarks,
@@ -23,7 +24,6 @@ export default function SidebarNav() {
           Home
         </NavLink>
       </li>
-
       <li className="navlink">
         <NavLink to="/explore" className="icon-navlink">
           <img src={Expore} alt="icon-explore" />
