@@ -5,9 +5,9 @@ import { TweetContext } from "../context/user-context";
 import { useContext } from "react";
 
 function Profile() {
-  const context = useContext(TweetContext);
-  const { tweetUser, setTweetUser } = context.tweets;
-  const ownUser = [...tweetUser];
+  // const context = useContext(TweetContext);
+  // const { tweetUser, setTweetUser } = context.tweets;
+  // const ownUser = [...tweetUser];
 
   return (
     <div className="userProfile">

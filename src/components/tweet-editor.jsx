@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { TweetContext } from "../context/user-context";
 import { useContext } from "react";
+import axios from "axios";
 
 function TweetEditor() {
   const context = useContext(TweetContext);
 
-  const { tweetUser, setTweetUser } = context.tweets;
+  // const { tweetUser, setTweetUser } = context.tweets;
+  const { datas, setDatas } = context.tweets;
 
   const [formData, setFormDate] = useState({
     tweetInput: "",
@@ -22,18 +24,14 @@ function TweetEditor() {
     formState: { errors },
   } = useForm({ defaultValues: formData });
 
-  const onSubmit = (data, e) => {
+  const onSubmit = async (data, e) => {
     e.preventDefault();
-
-    console.log(data);
-    const ownUser = [...tweetUser];
     const userCharacteristic = {
       avatar: "./public/icons/profile-photo.png",
       tweetAuthor: "joe kangoma",
       tweetVeried: "/public/icons/verified.png",
       tweetDetail: "@joe.. ",
       slug: "joe",
-
       tweetTime: "à l'instant",
       tweetText: `${data.tweetInput}`,
       tweetImage: null,
@@ -42,11 +40,23 @@ function TweetEditor() {
       tweetRetweet: "./public/icons/Retweet.png",
       tweetShare: "./public/icons/Share.png",
     };
+    try {
+      const response = await axios.post(
+        "https://65e5ab22d7f0758a76e700d1.mockapi.io/clonex/tweets",
+        userCharacteristic
+      );
 
-    ownUser.unshift(userCharacteristic);
+      const copyData = [...datas];
+      copyData.push(userCharacteristic);
 
-    setTweetUser(ownUser);
+      setDatas(copyData);
+    } catch (error) {
+      console.error("Error creating post:", error);
+    }
   };
+
+  console.log(datas);
+  // const ownUser = [...tweetUser];
 
   return (
     <div className="tweet-editor">

@@ -8,11 +8,12 @@ import { TweetContext } from "../context/user-context";
 export default function Tweets() {
   // console.log("DATA :" + JSON.stringify(tweetData));
   const OwnTweet = useContext(TweetContext);
-  const { tweetUser, setTweetUser } = OwnTweet.tweets;
+  const { datas, setDatas } = OwnTweet.tweets;
+  const copydatas = [...datas].reverse();
 
   return (
     <div className="tweets">
-      {tweetUser.map((item) => (
+      {copydatas.map((item) => (
         <Tweet
           key={item.id}
           identifiant={item.id}
