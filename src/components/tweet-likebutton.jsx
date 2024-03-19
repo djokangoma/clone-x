@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function TweetLikeButton() {
+export default function TweetLikeButton({ image }) {
   const [count, setCount] = useState(0);
   const [isLiked, setIsLiked] = useState(false);
 
@@ -21,7 +21,6 @@ export default function TweetLikeButton() {
         className=" hover:bg-gradient-to-r from-red-500 via-red-500 to-red-500 "
         src="/icons/React.png"
         alt="image"
-        style={heartStyle}
       />
       {count}
     </button>
